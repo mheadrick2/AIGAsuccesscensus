@@ -1,2 +1,45 @@
 @import 'reset.css';
 /*CUSTOM CSS*/
+
+body {
+  font-family: sans-serif;
+}
+h2 {
+  margin: 5px 0;
+}
+
+input {
+  margin: 5px 10px;
+}
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  border-bottom: 3px solid #333;
+}
+
+#reset {
+  background: red;
+}
+#answer {
+  border: 1px dashed #ccc;
+  background: #eee;
+  padding: 10px;
+}
+
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#quest1 {
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  top:500px;
+  background-color: red;
+}

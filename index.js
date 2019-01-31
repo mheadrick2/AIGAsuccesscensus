@@ -44,6 +44,7 @@ function tabulateAnswers() {
 
 var elem = document.getElementById("quest1"); 
       elem.style.backgroundColor="blue";
-      elem.style.top="100px";
+    var c1scorepx = "c1score"+"px";
+      elem.style.top= c1scorepx;
 
 }

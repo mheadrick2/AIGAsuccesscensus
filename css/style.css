@@ -1,45 +1,106 @@
-@import 'reset.css';
-/*CUSTOM CSS*/
-
-body {
-  font-family: sans-serif;
-}
-h2 {
-  margin: 5px 0;
+html{
+    scroll-behavior: smooth;
 }
 
-input {
-  margin: 5px 10px;
-}
-button {
-  font-size: 18px;
-  padding: 10px;
-  margin: 20px 0;
-  color: white;
-  border: 0;
-  border-radius: 10px;
-  border-bottom: 3px solid #333;
+
+div{
+    width:50vh;
+/*    display: inline-block;*/
+     
 }
 
-#reset {
-  background: red;
-}
-#answer {
-  border: 1px dashed #ccc;
-  background: #eee;
-  padding: 10px;
+.questions{
+    font-family: sans-serif;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(3rem);
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+    max-height: 100vh;
+    float: left;
+    width:50%;
+    
+    
 }
 
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
+.questions section{
+/*    background: yellow;*/
+    border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 25vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+/*	position: relative;*/
+    
 }
-#quest1 {
-  width: 50px;
-  height: 50px;
-  position:absolute;
-  top:500px;
-  background-color: red;
+
+.questions form{
+    text-align: left;
 }
+    
+}
+
+label{
+    transition: .3s ease-in-out;
+}
+
+label:hover{
+    text-decoration: underline;
+        
+}
+
+.button{
+    margin:1em;
+    
+}
+
+#answer5{
+    height: 2em;
+    background: blue;
+}
+
+.mapparts{
+	font-family: sans-serif;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vw);
+	scroll-snap-type: x mandatory;
+	display: flex;
+    flex-wrap: nowrap;
+	overflow-x: scroll;
+    width:50%;
+    height: 100vh;
+}
+
+#cityscape{
+    opacity: 0;
+    position:absolute;
+    top: 10px;
+    width:15%;
+    
+}
+
+#cityscape:hover{
+    width:30%;
+    transition: 1s ease-in-out;
+}
+
+.mapparts section{
+    background: #f4fcf5;
+    border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 50vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+}
+
+
+img{
+    width:90%;
+    height: auto;
+}
+

@@ -6,65 +6,120 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="index.js"></script>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-  </head>
-  <body>
-    <header>
-        <h1>A Map to Design Census</h1>
-    </header>
-    
-        <main>
-         <div id="wrapper">
-          <h1>What kind of computer scientist are you?</h1>
-          <p>Take this questionnaire to find out!</p>
+   </head>
+   
+   <body>
+       <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
+       <div class="questions">
+           <section class="fieldofwork">
+              <form>
+               <h1>At my most successful, I'll be working in the field(s) of: </h1>
+                    <label><input type="checkbox" name="q1" value="c1">
+                      UI / UX / Interaction Design / Experience Design
+                    </label><br />
 
-          <form id="quiz">
-            <!-- Question 1 -->
-            <h2>What gets you the most excited?</h2>
-            <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
-            <!-- The value is which answer the choice corresponds to. -->
-            <label><input type="checkbox" name="q1" value="c1">
-              Experimenting, discovering, and learning
-            </label><br />
-            <label><input type="checkbox" name="q1" value="c2">
-              Helping others
-            </label><br />
-            <label><input type="checkbox" name="q1" value="c3">
-              Music, movies, games, and making others laugh
-            </label><br />
-            <label><input type="checkbox" name="q1" value="c4">
-              Taking risks
-            </label><br />
-             </form>
+                    <label><input type="checkbox" name="q1" value="c2">
+                      Communication Design / Graphic Design 
+                    </label><br />
 
+                    <label><input type="checkbox" name="q1" value="c3">
+                      Motion Graphics / Film and Video / Production Design / Photography
+                    </label><br />
 
-            <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+                    <label><input type="checkbox" name="q1" value="c4">
+                      Emerging Tech (AR/VR/AI)
+                    </label><br />
 
+                    <label><input type="checkbox" name="q1" value="c5">
+                      Research / Data Analysis
+                    </label><br />
 
+                    <label><input type="checkbox" name="q1" value="c6">
+                      Front End Design / Web Design
+                    </label><br />
 
+                    <label><input type="checkbox" name="q1" value="c7">
+                      Civic Design / Impact Design / Service Design / Strategy Design
+                    </label><br />
 
-      <div id="answer"></div>
-    </div>
+                    <label><input type="checkbox" name="q1" value="c8">
+                      Interior Design
+                    </label><br />
 
-    <div id ="container">
-      <div id ="quest2"></div>
-      <div id ="quest3"></div>
-
-    </div>
-
-    <div id ="quest1"></div>
-
-    </main>
-
-    
-    <section>
-        <p>
-            
-        </p>
+                    <label><input type="checkbox" name="q1" value="c9">
+                      Illustration
+                    </label><br />
+                    
+                    <label><input type="checkbox" name="q1" value="c10">
+                      Marketing
+                    </label><br />
+                    
+                    <div type="submit" class="button3" onclick="tabulateAnswers()">Submit Your Answers</div>
+                    
+                
+                    
+                    
+               </form>
+               
+               <div id="answer5"> here </div><br />
+   
+         
+          
+           </section>
+           
         
-    </section>
-  </body>
-  
+           
+           <section id="successskills">
+               
+               <h1> TEST CONTENT</h1>
+               
+           </section>
+           <section class="beyondwork">
+              
+               <h1> TEST CONTENT</h1>
+               
+           </section>
+           <section class="honeskills">
+              
+               <h1> TEST CONTENT</h1>
+               
+           </section>
+           
+        
+           
+        </div>
+          
+          
+        <div class="mapparts">
+            <section class="city">
+                <img id="cityscape" src="cityscape.png">
+                <img id="city" src="city_sample.png">
+                
+                
+            </section >
+            <section class="forest">
+                
+                <img src="forest_sample.png">
+                
+            </section>
+            <section>
+                
+                <h1> TEST CONTENT</h1>
+                
+            </section>
+            <section>
+                
+                <h1> TEST CONTENT</h1>
+                
+            </section>
+        
+        </div>
+
+        
+   </body>
+   
 </html>
+   

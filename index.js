@@ -1,10 +1,11 @@
-function tabulateAnswers() {
-  // initialize variables for each choice's score
-  // If you add more choices and outcomes, you must add another variable here.
   var c1score = 0;
   var c2score = 0;
   var c3score = 0;
   var c4score = 0;
+
+function tabulateAnswers() {
+  // initialize variables for each choice's score
+
   
   // get a list of the radio inputs on the page
   var choices = document.getElementsByTagName('input');
@@ -26,25 +27,55 @@ function tabulateAnswers() {
     }
   }
   
-  // Find out which choice got the highest score.
-  // If you add more choices and outcomes, you must add the variable here.
  
   // Display answer corresponding to that choice
-  var answerbox = document.getElementById('answer');
-  if (c1score == 300) { // If user chooses the first choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You are a A WINNER";
+  var answerbox = document.getElementById('answer5');
+  var cityscape = document.getElementById('cityscape')
+  if (c1score == '300') { 
+      answerbox.innerHTML = "The Successful Designer";
       answerbox.style.backgroundColor="green";
-    
-      
-  }
+      answerbox.style.fontSize='24px';
+      cityscape.style.opacity='1';
+      cityscape.style.position
+     }
+     
      else{
-          answerbox.innerHTML = "LOSERRRRRRRRRRR";
+          answerbox.innerHTML ="Not Quite Right";
       }
-
-
-var elem = document.getElementById("quest1"); 
-      elem.style.backgroundColor="blue";
-    var c1scorepx = "c1score"+"px";
-      elem.style.top= c1scorepx;
-
+  
 }
+
+
+ function numberRandomizer(){
+      var x = Math.floor((Math.random() * 500) + 300); //random number between 300 and 800
+      return x;
+    }
+
+function scrolltopos(){
+      document.getElementById("successskills").scrollIntoView();
+      document.getElementById("forest").scrollIntoView();
+
+     }
+    
+    
+    
+    
+
+
+//    var elem = document.getElementById('quest1'); 
+//      elem.style.backgroundColor="blue";
+//      elem.style.opacity="1";
+//    var c1scorepx = "c1score"+"px";
+//      elem.style.top= "c1scorepx";
+
+
+
+//const init = function(){
+//	let items = document.querySelectorAll('section');
+//	for (let i = 0; i < items.length; i++){
+//		items[i].style.background = randomColor({luminosity: 'light'});
+//	}
+//	cssScrollSnapPolyfill()
+//}
+//init();
+//

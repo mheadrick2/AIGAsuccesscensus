@@ -1,3 +1,6 @@
+@import 'reset.css';
+/*CUSTOM CSS*/
+
 html{
     scroll-behavior: smooth;
 }

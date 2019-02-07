@@ -6,18 +6,193 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header>
-        <h1>A Map to Design Census</h1>
-    </header>
-    <section>
-        <p>
-            
-        </p>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+   </head>
+   
+   <body>
+       <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
+       
+          <div class="question1">
+            <section id="successskills">
+               <form>
+                   <h1>As a successful designer I have these skills:</h1>
+                        <label><input type="checkbox" name="q1" value="c1">
+                          <h3>Technical</h3> 
+                          <p>(coding/engineering/SEO &#38; SEM/data analysis)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q1" value="c2">
+                          <h3>Communication</h3> 
+                          <p>(public speaking/relationship management/social media/diversity &#38; inclusion)</p> 
+                        </label><br />
+
+                        <label><input type="checkbox" name="q1" value="c3">
+                          <h3>Leadership &#38; Mentoring</h3>
+                          <p>(leadership/mentoring/project management/facilitation/business)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q1" value="c4">
+                          <h3>Design Thinking &#38; Expression</h3> 
+                          <p>(writing/drawing &#38; painting/brainstorming &#38; ideation)</p>
+                        </label><br />
+                    <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
+               </form>
+               <div id="answer5"> here </div><br />
+           </section>
+           
+           <section class="city">
+                <img id="cityscape" src="cityscape.png">
+                <img id="city" src="city_sample.png">
+            </section >
+       </div>
         
-    </section>
-  </body>
-  
+        
+        <div class="question2">       
+           <section class="beyondwork">
+               <form>
+               <h1>In addition to my professional design work, I:</h1>
+                    <label><input type="checkbox" name="q2" value="c1">
+                      Own my own business
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c2">
+                      Freelance on the Side 
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c3">
+                      Design for Friends and Family
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c4">
+                      Volunteer
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c5">
+                      Teach
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c6">
+                      Maintain Personal Projects
+                    </label><br />
+
+                    <label><input type="checkbox" name="q2" value="c7">
+                      None of these
+                    </label><br />
+                    <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
+               </form>
+               <div id="answer5"> here </div><br />
+           </section>
+           
+           <section class="suburb">
+                <img id="" src="">
+                <img id="" src="">
+            </section >
+       </div>
+        
+        
+        <div class="question3">
+           <section class="fieldofwork">
+              <form>
+               <h1>At my most successful, I'll be working in the field(s) of: </h1>
+                    <label><input type="checkbox" name="q3" value="c1">
+                      UI / UX / Interaction Design / Experience Design
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c2">
+                      Communication Design / Graphic Design 
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c3">
+                      Motion Graphics / Film and Video / Production Design / Photography
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c4">
+                      Emerging Tech (AR/VR/AI)
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c5">
+                      Research / Data Analysis
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c6">
+                      Front End Design / Web Design
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c7">
+                      Civic Design / Impact Design / Service Design / Strategy Design
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c8">
+                      Interior Design
+                    </label><br />
+
+                    <label><input type="checkbox" name="q3" value="c9">
+                      Illustration
+                    </label><br />
+                    
+                    <label><input type="checkbox" name="q3" value="c10">
+                      Marketing
+                    </label><br />
+                    <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
+               </form>
+               <div id="answer5"> here </div><br />
+           </section>
+           
+           <section class="forest">
+                <img id="" src="">
+                <img id="" src="">
+            </section >
+       </div>
+           
+           
+        <div class="question4">
+           <section class="honeskills">
+                <form>
+                   <h1>In the future, I’ll need to get better at:</h1>
+                        <label><input type="checkbox" name="q4" value="c1">
+                          <h3>Technical</h3> 
+                          <p>(coding/engineering/SEO &#38; SEM/data analysis/AI algorithm design/VR or AR design)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q4" value="c2">
+                          <h3>Communication</h3> 
+                          <p>(public speaking/relationship management/social media/diversity &#38; inclusion)</p> 
+                        </label><br />
+
+                        <label><input type="checkbox" name="q4" value="c3">
+                          <h3>Leadership &#38; Mentoring</h3>
+                          <p>(leadership/mentoring/project management/facilitation/business/strategy)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q4" value="c4">
+                          <h3>Design Thinking &#38; Expression</h3> 
+                          <p>(brainstorming &#38; ideation/service design/social impact design)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q4" value="c5">
+                          <h3>Creative Expression</h3> 
+                          <p>(writing/drawing &#38; painting/animation/motion graphics/photography)</p>
+                        </label><br />
+
+                        <label><input type="checkbox" name="q4" value="c6">
+                          <h3>Digital Design</h3> 
+                          <p>(UI design/UX design/interaction design/product design/web design)</p>
+                        </label><br />
+                        <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
+                   </form>
+                   <div id="answer5"> here </div><br />
+           </section>
+           
+           <section class="mountains">
+                <img id="" src="">
+                <img id="" src="">
+            </section >
+        </div>
+
+        
+   </body>
+   
 </html>
+   

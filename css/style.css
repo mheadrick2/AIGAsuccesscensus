@@ -3,14 +3,55 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color:#F4FCF5;
+}
+
+/*Type*/
+h1{
+    font-size:7em;
+    font-weight:600;
+    margin-bottom:0.4em;
+    color:#FF0000;
+    
+}
+
+h2{
+    font-size:2.5em;
+    font-weight:400;
+    line-height:1.3em;
+    color:#FF0000;
+}
+
+h3{
+    font-size:1.5em;
+    font-weight:600;
+    text-transform: capitalize;
+    color:#FF0000;
+}
+p{
+    font-size:1em;
+    font-weight:400;
+    line-height: 1.5em;
+    color:#FF0000;
 }
 
 
+body{
+    padding:5em 15em 5em 5em;
+}
 div{
     width:50vh;
 /*    display: inline-block;*/
      
 }
+
+a{
+    color:#FF0000;
+    font-size: 5em;
+    text-align:right;
+}
+
 
 .questions{
     font-family: sans-serif;

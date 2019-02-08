@@ -7,33 +7,35 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="index.js"></script>
+    <script src="success.js"></script>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    
+
    </head>
    <body>
         <header>
             <h2>How would you define your success as a design professional? (Choose 2.)</h2>
         </header>
        <main>
-          <section class="grid">
-           <section class="button" id=success>
+          <form class="form">
+           <section class="button" id=success> <label><input type="checkbox" name="option1" value="longevity">
                <h3>LONGEVITY</h3>
-               <p>I’ve been a professional designer for 10+ years</p>
+               <p>I’ve been a professional designer for 10+ years</p></label>
            </section>
-           <section class="button" id=success>
+           <section class="button" id=success><label><input type="checkbox" name="option2" value="stability">
                <h3>JOB STABILITY</h3>
-               <p>I’m in a stable job position</p>
+               <p>I’m in a stable job position</p></label>
            </section>
-           <section class="button" id=success>
+           <section class="button" id=success><label><input type="checkbox" name="option3" value="satisfaction">
                <h3>SATISFACTION</h3>
-               <p>I enjoy my job.</p>
+               <p>I enjoy my job</p></label>
            </section>
-           <section class="button" id=success>
+           <section class="button" id=success><label><input type="checkbox" value="salary">
                <h3>SALARY</h3>
-               <p>I’m making between $65,000 and $216,000</p>
+               <p>I’m making between $65,000 and $216,000</p></label>
            </section>
-       </section>
+           <div type="submit" class="button" onclick="tabulateAnswers()">Next</div>
+            </form>
+
        </main>
     </body>

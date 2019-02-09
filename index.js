@@ -52,31 +52,32 @@ function tabulateAnswers() {
     }
 
 function scrolltopos(){
-      document.getElementById("successskills").scrollIntoView();
+      document.getElementById("beyondwork").scrollIntoView();
       document.getElementById("forest").scrollIntoView();
 
      }
     
 // TRING SIDE NAV  
 function openNav() {
-  document.getElementByClassName("questions").style.height = "100vh";
+  document.getElementById("plswork").style.height = "70vh";
+  document.getElementsByClassName("questions").style.height = "70vh";
 }
 
 function closeNav() {
-  document.getElementByClassName("questions").style.height = "0%";
+  document.getElementById("plswork").style.height = "5vh";
 }
-
+//
 //var coll = document.getElementsByClassName("collapsible");
 //var i;
 //
 //for (i = 0; i < coll.length; i++) {
 //  coll[i].addEventListener("click", function() {
 //    this.classList.toggle("active");
-//    var content = document.getElementsByClassName("questions");
-//    if (content.style.display === "block") {
+//    var content = document.getElementById("allqs");
+//    if (content.style.display === "flex") {
 //      content.style.display = "none";
 //    } else {
-//      content.style.display = "block";
+//      content.style.display = "flex";
 //    }
 //  });
 //}

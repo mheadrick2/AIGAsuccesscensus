@@ -15,16 +15,19 @@
    
    <body>
         
+      <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
       
-      
-       <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
+    
+           
+         <div class="allqs" onclick="openNav()">
+         
+        
        
-
-<!--        <button class="collapsible">Open Collapsible</button>     -->
-          <div class="questions" onclick="openNav()">
+          <div id="plswork" class="questions" >
             <!--       TRYING FOLD NAV THING-->
            
             <section id="successskills">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
                <form> 
                    <h1>As a successful designer I have these skills:</h1>
                         <label><input type="checkbox" name="q1" value="c1">
@@ -54,9 +57,11 @@
                           <p>(writing/drawing &#38; painting/brainstorming &#38; ideation)</p>
                             </div>
                         </label><br />
-                    <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
+                    <div type="submit" class="button3" onclick="tabulateAnswers();""closeNav();">Submit</div>
                </form>
                <div id="answer5"> here </div><br />
+               
+               <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
            </section>
            
            <section class="city">
@@ -254,6 +259,8 @@
                 <img id="" src="">
                 <img id="" src="">
             </section >
+        </div>
+        
         </div>
 
         

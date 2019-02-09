@@ -42,6 +42,9 @@ p{
 
 
 body{
+}
+
+header{
     padding:6em 10em 6em 6em;
 }
 
@@ -111,11 +114,7 @@ label{
         border: 2px solid #D1D7DC;
           background-color: #fff;}
 }
-div{
-    width:50vh;
-/*    display: inline-block;*/
-     
-}
+
 
 a{
     color:#FF0000;
@@ -124,38 +123,88 @@ a{
 }
 
 
-.questions{
-    font-family: sans-serif;
-	scroll-snap-type: mandatory;
-	scroll-snap-points-y: repeat(3rem);
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
-    max-height: 100vh;
-    float: left;
-    width:50%;
+
+
+.allqs {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:#765eed;
+  color: white;
+  border: none;
+  height:5vh;
     
-    
+  display: flex;
+  overflow-x: scroll;
+  min-width: 100vw;
+}
+/*Above is a contianer for all questions and helps start foldbale question section*/
+
+.allqs:hover {
+  background-color:#444;
 }
 
+
+.questions{
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 0vh;
+  top: 0;
+  left: 0;
+  background-color: #765eed;
+  overflow-x: scroll;
+  transition: 0.5s;
+  padding-top: 0em;
+    
+    min-width:100vw;
+}
+/* questions class unfolds when you click #allqs*/
+
+.questions a:hover {
+  color: #f1f1f1;
+}
+
+.questions .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+/*closenav button -- doesnt work right now??*/
+
+
 .questions section{
-/*    background: yellow;*/
     border-right: 1px solid white;
-	padding: 1rem;
-	min-width: 25vw;
-	height: 100vh;
-	scroll-snap-align: start;
+	padding: 2rem;
 	text-align: center;
     display: flex;
     flex-direction: column;
-    
-/*	position: relative;*/
-    
+    overflow-x: auto;
 }
 
 .questions form{
     text-align: left;
+    display: block;
 }
-    
+   
+.questions h1{
+    color:white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+/*question styling*/
+
+.questions h3{
+    color:white;
+}
+
+.questions p{
+    color:white;
+}
+.content{
+    text-align: left;
+    margin-left: 2em;
+    font-size: .8em;
 }
 
 label{
@@ -163,16 +212,15 @@ label{
 }
 
 label:hover{
-    text-decoration: underline;
-        
+    text-decoration: underline;      
 }
-
 
 #answer5{
     height: 2em;
     background: blue;
 }
 
+/*
 .mapparts{
 	font-family: sans-serif;
 	scroll-snap-type: mandatory;
@@ -184,20 +232,17 @@ label:hover{
     width:50%;
     height: 100vh;
 }
+*/
 
-#cityscape{
-    opacity: 0;
+#mountain{
+    opacity: 1;
     position:absolute;
-    top: 10px;
+    top: 50%;
     width:15%;
     
 }
 
-#cityscape:hover{
-    width:30%;
-    transition: 1s ease-in-out;
-}
-
+/*
 .mapparts section{
     background: #f4fcf5;
     border-right: 1px solid white;
@@ -208,6 +253,7 @@ label:hover{
 	text-align: center;
 	position: relative;
 }
+*/
 
 
 img{

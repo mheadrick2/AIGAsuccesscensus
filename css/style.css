@@ -116,6 +116,11 @@ label{
 }
 
 
+input[type=checkbox]:checked ~ div.content h3 span{
+  background: #FF0000;
+    width:
+} 
+
 a{
     color:#FF0000;
     font-size: 5em;
@@ -189,8 +194,9 @@ a{
    
 .questions h1{
     color:white;
-    font-size: 2.5em;
+    font-size: 2em;
     transition: 0.3s;
+    margin-bottom: .3em;
 }
 /*question styling*/
 
@@ -204,7 +210,7 @@ a{
 .content{
     text-align: left;
     margin-left: 2em;
-    font-size: .8em;
+    font-size: .5em;
 }
 
 label{

@@ -12,31 +12,47 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
    </head>
    
+   
    <body>
+        
+      
+      
        <div type="submit" id="nextpos" onclick="scrolltopos()">Next Question</div>
        
-          <div class="questions">
+
+<!--        <button class="collapsible">Open Collapsible</button>     -->
+          <div class="questions" onclick="openNav()">
+            <!--       TRYING FOLD NAV THING-->
+           
             <section id="successskills">
-               <form>
+               <form> 
                    <h1>As a successful designer I have these skills:</h1>
                         <label><input type="checkbox" name="q1" value="c1">
+                         <div class="content">
                           <h3>Technical</h3> 
                           <p>(coding/engineering/SEO &#38; SEM/data analysis)</p>
+                          </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q1" value="c2">
+                         <div class="content">
                           <h3>Communication</h3> 
                           <p>(public speaking/relationship management/social media/diversity &#38; inclusion)</p> 
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q1" value="c3">
+                         <div class="content">
                           <h3>Leadership &#38; Mentoring</h3>
                           <p>(leadership/mentoring/project management/facilitation/business)</p>
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q1" value="c4">
+                         <div class="content">
                           <h3>Design Thinking &#38; Expression</h3> 
                           <p>(writing/drawing &#38; painting/brainstorming &#38; ideation)</p>
+                            </div>
                         </label><br />
                     <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
                </form>
@@ -44,42 +60,59 @@
            </section>
            
            <section class="city">
+<!--
                 <img id="cityscape" src="cityscape.png">
                 <img id="city" src="city_sample.png">
+-->
             </section >
        </div>
-        
+       
         
         <div class="questions">       
            <section id="beyondwork">
+            
                <form>
                <h1>In addition to my professional design work, I:</h1>
                     <label><input type="checkbox" name="q2" value="c1">
-                      Own my own business
+                     <div class="content">
+                      <h3>Own my own business</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c2">
-                      Freelance on the Side 
+                     <div class="content">
+                      <h3>Freelance on the Side </h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c3">
-                      Design for Friends and Family
+                     <div class="content">
+                      <h3>Design for Friends and Family</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c4">
-                      Volunteer
+                     <div class="content">
+                      <h3>Volunteer</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c5">
-                      Teach
+                     <div class="content">
+                      <h3>Teach</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c6">
-                      Maintain Personal Projects
+                     <div class="content">
+                      <h3>Maintain Personal Projects</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q2" value="c7">
-                      None of these
+                     <div class="content">
+                      <h3>None of these</h3>
+                        </div>
                     </label><br />
                     <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
                </form>
@@ -98,43 +131,63 @@
               <form>
                <h1>At my most successful, I'll be working in the field(s) of: </h1>
                     <label><input type="checkbox" name="q3" value="c1">
-                      UI / UX / Interaction Design / Experience Design
+                    <div class="content">
+                     <h3> UI / UX / Interaction Design / Experience Design</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c2">
-                      Communication Design / Graphic Design 
+                     <div class="content">
+                      <h3>Communication Design / Graphic Design </h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c3">
-                      Motion Graphics / Film and Video / Production Design / Photography
+                     <div class="content">
+                      <h3>Motion Graphics / Film and Video / Production Design / Photography</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c4">
-                      Emerging Tech (AR/VR/AI)
+                     <div class="content">
+                      <h3>Emerging Tech (AR/VR/AI)</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c5">
-                      Research / Data Analysis
+                     <div class="content">
+                      <h3>Research / Data Analysis</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c6">
-                      Front End Design / Web Design
+                     <div class="content">
+                      <h3>Front End Design / Web Design</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c7">
-                      Civic Design / Impact Design / Service Design / Strategy Design
+                     <div class="content">
+                      <h3>Civic Design / Impact Design / Service Design / Strategy Design</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c8">
-                      Interior Design
+                     <div class="content">
+                      <h3>Interior Design</h3>
+                        </div>
                     </label><br />
 
                     <label><input type="checkbox" name="q3" value="c9">
-                      Illustration
+                     <div class="content">
+                      <h3>Illustration</h3>
+                        </div>
                     </label><br />
                     
                     <label><input type="checkbox" name="q3" value="c10">
-                      Marketing
+                     <div class="content">
+                      <h3>Marketing</h3>
+                        </div>
                     </label><br />
                     <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
                </form>
@@ -146,40 +199,51 @@
                 <img id="" src="">
             </section >
        </div>
-           
-           
+            
         <div class="questions">
            <section id="honeskills">
                 <form>
                    <h1>In the future, I’ll need to get better at:</h1>
                         <label><input type="checkbox" name="q4" value="c1">
+                         <div class="content">
                           <h3>Technical</h3> 
                           <p>(coding/engineering/SEO &#38; SEM/data analysis/AI algorithm design/VR or AR design)</p>
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q4" value="c2">
+                         <div class="content">
                           <h3>Communication</h3> 
                           <p>(public speaking/relationship management/social media/diversity &#38; inclusion)</p> 
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q4" value="c3">
+                         <div class="content">
                           <h3>Leadership &#38; Mentoring</h3>
                           <p>(leadership/mentoring/project management/facilitation/business/strategy)</p>
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q4" value="c4">
+                         <div class="content">
                           <h3>Design Thinking &#38; Expression</h3> 
                           <p>(brainstorming &#38; ideation/service design/social impact design)</p>
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q4" value="c5">
+                         <div class="content">
                           <h3>Creative Expression</h3> 
                           <p>(writing/drawing &#38; painting/animation/motion graphics/photography)</p>
+                            </div>
                         </label><br />
 
                         <label><input type="checkbox" name="q4" value="c6">
+                         <div class="content">
                           <h3>Digital Design</h3> 
                           <p>(UI design/UX design/interaction design/product design/web design)</p>
+                            </div>
                         </label><br />
                         <div type="submit" class="button3" onclick="tabulateAnswers()">Submit</div>
                    </form>

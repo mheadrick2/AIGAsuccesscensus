@@ -57,8 +57,30 @@ function scrolltopos(){
 
      }
     
-    
-    
+// TRING SIDE NAV  
+function openNav() {
+  document.getElementByClassName("questions").style.height = "100vh";
+}
+
+function closeNav() {
+  document.getElementByClassName("questions").style.height = "0%";
+}
+
+//var coll = document.getElementsByClassName("collapsible");
+//var i;
+//
+//for (i = 0; i < coll.length; i++) {
+//  coll[i].addEventListener("click", function() {
+//    this.classList.toggle("active");
+//    var content = document.getElementsByClassName("questions");
+//    if (content.style.display === "block") {
+//      content.style.display = "none";
+//    } else {
+//      content.style.display = "block";
+//    }
+//  });
+//}
+//    
     
 
 

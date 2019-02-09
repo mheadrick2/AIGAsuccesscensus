@@ -11,6 +11,23 @@
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
 
+    <script>
+    $(document).ready(function() {
+
+      var last_valid_selection = null;
+
+      $('#success').change(function(event) {
+        if ($(this).val().length > 2) {
+          alert('You can only choose 2!');
+          $(this).val(last_valid_selection);
+        } else {
+          last_valid_selection = $(this).val();
+        }
+      });
+    });
+    </script>  
+    
+    
    </head>
    <body>
         <header>

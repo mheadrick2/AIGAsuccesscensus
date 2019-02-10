@@ -19,6 +19,11 @@ h1{
     line-height:1.3em;
 }
 
+h1 span{
+    text-decoration: underline;
+}
+/*ADD CODE TO SPAN UNDERLINED SUCCESS PART*/
+
 h2{
     font-size:1.8em;
     font-weight:400;
@@ -44,14 +49,18 @@ p{
 body{
 }
 
-header{
+#firstpage{
     padding:6em 10em 6em 6em;
+}
+
+header{
+    padding:6em 3em 3em 3em;
 }
 
 
 /*button*/
 .button{
-    margin-left:5em;
+    margin-left:3em;
     margin-right:5em;
     padding:0.4em 0.4em;
     color: #FF0000;
@@ -66,14 +75,14 @@ header{
     text-align:center;
 }
 form{
-    margin-top:2em;
     display:grid;
-    grid-template-columns: 45% 45%;
-    grid-gap:10%;
+    grid-template-columns: 49% 49%;
+    grid-gap:2%;
 }
 
 #success{
     padding:3.5em 2em;
+    margin-bottom: 1em;
 }
 
 .button:hover{
@@ -83,11 +92,11 @@ form{
 }
 
 .button:hover p{
-    color:#F4FCF5; 
+    color:#F4FCF5;
 }
 
 .button:hover h3{
-    color:#F4FCF5; 
+    color:#F4FCF5;
 }
 
 input[type=checkbox] {

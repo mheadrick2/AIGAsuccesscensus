@@ -131,7 +131,8 @@ function draw(){
      else{
           answerbox.innerHTML ="Not Quite Right";
       }
-  
+ 
+    
 }
 
 
@@ -149,6 +150,10 @@ function scrolltopos(){
 // TRING SIDE NAV  
 function openNav() {
   document.getElementById("plswork").setAttribute("style","height:70vh");
+    document.getElementById("plswork2").setAttribute("style","height:70vh");
+    
+    document.getElementById("plswork3").setAttribute("style","height:70vh");
+    document.getElementById("plswork4").setAttribute("style","height:70vh");
 //  document.getElementsByClassName("questions").setAttribute("style","height:70vh");
 }
 

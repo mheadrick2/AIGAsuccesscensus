@@ -86,49 +86,23 @@ form{
 input[type=checkbox] {
     visibility: hidden;
 }
-
-label{
-    padding: 12px 30px;
-      width: 100%;
-      text-align: center;
-      color: #ff0000;
-      cursor: pointer;
-      transition: color 200ms ease-in;
-      overflow: hidden;
-
-      &:before {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        content: '';
-        background-color: #5562eb;
-        transform: translate(-50%, -50%) scale3d(1, 1, 1);
-        transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-        opacity: 0;
-      }
-
-      &:after {
-        width: 32px;
-        height: 32px;
-        content: '';
-        border: 2px solid #D1D7DC;
-          background-color: #fff;}
-}
-
-
 input[type=checkbox]:checked ~ div.content h3 span{
   background: #FF0000;
-    width:
 } 
+input[type=checkbox]:checked ~ section.button{
+    background-color:#FF0000;
+    transition: opacity 0.1s ease-in;
+}
+
+input[type=checkbox]:checked ~ section.button h3,input[type=checkbox]:checked ~section.button p{
+    color:#F4FCF5;
+}
 
 a{
     color:#FF0000;
     font-size: 5em;
     text-align:right;
 }
-
-
-
 
 .allqs {
   font-size: 20px;

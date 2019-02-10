@@ -7,6 +7,7 @@ var typeindex = 0;
 
 //var counter = 0;
 
+///////////////for success page/////////////////
 function determineType(){
     var choices = document.getElementsByTagName('input');
     for (i=0; i<choices.length; i++){
@@ -53,7 +54,7 @@ function determineType(){
     window.location.href = "confirmation.html"
     }
 
-//confirmation page responsive text display
+///////////////confirmation page////////////////
 window.onload = function() {
     var type = localStorage.getItem("type");
     var word1 = type.split(",")[0];

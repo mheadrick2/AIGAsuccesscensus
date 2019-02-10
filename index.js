@@ -12,45 +12,64 @@ function determineType(){
     for (i=0; i<choices.length; i++){
         if (choices[i].checked){
             if (choices[i].value == 'longevity'){
+//                console.log("1");
                 type.push('longevity');
 //                counter = counter+1;
 //                if(counter>=2){break;}
             }
             if (choices[i].value == 'stability'){
+//                console.log("1");
                 type.push('stability');
 //                counter = counter+1;
 //                if(counter>=2){break;}
             }
             if (choices[i].value == 'satisfaction'){
                 type.push('satisfaction');
+//                console.log("1");
 //                counter = counter+1;
 //                if(counter>=2){break;}
             }
             if (choices[i].value == 'salary'){
                 type.push('salary');
+//                console.log("1");
 //                counter = counter+1;
 //                if(counter>=2){break;}
             }
         }
     }
+    console.log(type);
     if (type.includes("salary")&& type.includes("satisfaction")){typeindex = 1}
     if (type.includes("salary")&& type.includes("stability")){typeindex = 2}
     if (type.includes("longevity")&& type.includes("stability")){typeindex = 3}
     if (type.includes("longevity")&& type.includes("satisfaction")){typeindex = 4}
     if (type.includes("salary")&& type.includes("longevity")){typeindex = 5}
     if (type.includes("stability")&& type.includes("satisfaction")){typeindex = 6}
-
+    console.log(typeindex);
+    localStorage.setItem("type",type);
+    localStorage.setItem("typeindex",typeindex);
+    
+//  redirects
+//    window.location.href = "type"+typeindex+".html"
+    window.location.href = "confirmation.html"
     }
 
+//confirmation page responsive text display
+window.onload = function() {
+    var type = localStorage.getItem("type");
+    var word1 = type.split(",")[0];
+    var word2 = type.split(",")[1]
+    var typeindex = localStorage.getItem("typeindex");
+    
+    console.log(type)
+    if (type != []){
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+var declaration = "I define success in design as " + word1+" and "+word2+".";
+document.getElementById("myChoice").innerHTML = declaration;}
+} 
 
-if (typeindex == 1) { 
-      answerbox.innerHTML = "salary+satisfaction";
-      answerbox.style.backgroundColor="green";
-      answerbox.style.fontSize='24px';
-      cityscape.style.opacity='1';
-      cityscape.style.position
-     }
 
+/////////////////   for main //////////////////////
 function tabulateAnswers() {
   // initialize variables for each choice's score
 

@@ -105,7 +105,18 @@ function tabulateAnswers() {
     }
   }
   
- 
+var canvas;
+
+
+function setup(){
+    canvas = createCanvas(windowWidth,windowHeight);
+    canvas.position(0,0);
+    canvas.style("z-index","-1");
+}
+
+function draw(){
+    background(244,252,245);
+}
   // Display answer corresponding to that choice
   var answerbox = document.getElementById('answer5');
   var cityscape = document.getElementById('cityscape')

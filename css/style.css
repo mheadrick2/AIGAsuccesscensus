@@ -16,7 +16,7 @@ h1{
     font-weight:600;
     margin-bottom:0.6em;
     color:#FF0000;
-    
+    line-height:1.3em;
 }
 
 h2{
@@ -51,13 +51,20 @@ header{
 
 /*button*/
 .button{
+    margin-left:5em;
+    margin-right:5em;
     padding:0.4em 0.4em;
     color: #FF0000;
     border: 4px solid #FF0000; 
-    float:right;
+    float:center;
     text-align:center;   
 }
-
+.sidebutton{
+    padding:3em;
+    color: #FF0000;
+    float:center;
+    text-align:center;
+}
 form{
     margin-top:2em;
     display:grid;
@@ -100,8 +107,14 @@ input[type=checkbox]:checked ~ section.button h3,input[type=checkbox]:checked ~s
 
 a{
     color:#FF0000;
-    font-size: 5em;
+    font-size: 2em;
     text-align:right;
+    text-decoration:none;
+}
+
+.button a{
+    margin-top:3em;
+    margin-bottom:3em;
 }
 
 .allqs {

@@ -8,6 +8,24 @@ var typeindex = 0;
 //var counter = 0;
 
 ///////////////for success page/////////////////
+//check choice
+function validate(){
+    var choices = document.getElementsByTagName('input');
+    var optionCount = 0;
+    for (var i = 0; i < choices.length; i++) {
+                if (choices[i].checked) {
+                    optionCount++;
+                }
+            }
+    console.log(optionCount);
+    if (optionCount != 2){
+        alert("Please select 2.");
+        return false;
+    }
+        determineType();
+}
+
+//check type
 function determineType(){
     var choices = document.getElementsByTagName('input');
     for (i=0; i<choices.length; i++){
@@ -15,26 +33,18 @@ function determineType(){
             if (choices[i].value == 'longevity'){
 //                console.log("1");
                 type.push('longevity');
-//                counter = counter+1;
-//                if(counter>=2){break;}
             }
             if (choices[i].value == 'stability'){
 //                console.log("1");
                 type.push('stability');
-//                counter = counter+1;
-//                if(counter>=2){break;}
+
             }
             if (choices[i].value == 'satisfaction'){
                 type.push('satisfaction');
-//                console.log("1");
-//                counter = counter+1;
-//                if(counter>=2){break;}
+
             }
             if (choices[i].value == 'salary'){
                 type.push('salary');
-//                console.log("1");
-//                counter = counter+1;
-//                if(counter>=2){break;}
             }
         }
     }

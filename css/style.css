@@ -195,7 +195,8 @@ a{
 .content{
     text-align: left;
     margin-left: 2em;
-    font-size: .5em;
+    font-size: .45em;
+    margin-bottom: .5em;
 }
 
 label{

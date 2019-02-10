@@ -160,6 +160,12 @@ function openNav() {
 function closeNav() {
     document.getElementById("plswork").style.removeProperty('style');
     document.getElementById("plswork").setAttribute("style","height:5vh");
+    
+    document.getElementById("plswork2").setAttribute("style","height:5vh");
+    
+    document.getElementById("plswork3").setAttribute("style","height:5vh");
+    
+    document.getElementById("plswork4").setAttribute("style","height:5vh");
 }
 //
 //var coll = document.getElementsByClassName("collapsible");

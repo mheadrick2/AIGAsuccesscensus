@@ -90,7 +90,7 @@ function tabulateAnswers() {
       if (inputs[i].value == 'c1') {
         choices.push("technical");
         imgs.push("b2.png"); 
-          locations.push((windowWidth*.8,windowHeight*.4));
+          locations.push([windowWidth*.8,windowHeight*.4]);
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
@@ -109,25 +109,24 @@ function tabulateAnswers() {
       }
       // If you add more choices and outcomes, you must add another if statement below.
     }}
+draw();
 }
 
   
 var canvas;
+var img;
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);
     canvas.style("z-index","-1");
+    img = loadImage('img/b2.png');
 }
 
 function draw(){
     background(244,252,245);
-    for (i=0; i<choices.length; i++){
-        console.log("hi");
-        var img = loadImage('img/'+imgs[i]);
-        image(img,locations[i][0],locations[i][1]);
-    }
-}
+    image(img,locations[0][0],locations[0][1]);
 
+}
 
 
 

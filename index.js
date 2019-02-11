@@ -27,11 +27,9 @@ function determineType(){
     for (i=0; i<choices.length; i++){
         if (choices[i].checked){
             if (choices[i].value == 'longevity'){
-//                console.log("1");
                 type.push('longevity');
             }
             if (choices[i].value == 'stability'){
-//                console.log("1");
                 type.push('stability');
 
             }
@@ -81,7 +79,7 @@ var choices = [];
 var imgs = [];
 var locations = [];
 
-function tabulateAnswers() {
+function type1q1() {
     choices = [];
     imgs = [];
     locations = [];
@@ -94,25 +92,35 @@ function tabulateAnswers() {
       if (inputs[i].value == 'c1') {
         choices.push("technical");
         imgs.push(loadImage('img/b2.png')); 
+          //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
           locations.push([windowWidth*x,windowHeight*y]);
-          console.log(x,y)
+//          console.log(x,y)
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
         imgs.push(loadImage('img/b4.png'));
-          locations.push([windowWidth*.38,windowHeight*.33*2]);
+        //locations
+          var x = numberRandomizer(.27,.8);
+          var y = numberRandomizer(.51,.61);
+          locations.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
         choices.push("leadership");
         imgs.push(loadImage('img/b1.png'));
-        locations.push([windowWidth*.083,windowHeight*.325]);
+        //locations
+          var x = numberRandomizer(.27,.8);
+          var y = numberRandomizer(.51,.61);
+        locations.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
         choices.push("thinking");
         imgs.push(loadImage('img/b2.png'));
-          locations.push([windowWidth*.22,windowHeight*.2]);
+        //locations
+          var x = numberRandomizer(.27,.8);
+          var y = numberRandomizer(.51,.61);
+         locations.push([windowWidth*x,windowHeight*y]);
       }
     }}
     draw();

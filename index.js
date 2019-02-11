@@ -82,33 +82,37 @@ var imgs = [];
 var locations = [];
 
 function tabulateAnswers() {
+    choices = [];
+    imgs = [];
+    locations = [];
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
     // if the radio is checked..
     if (inputs[i].checked) {
+
       if (inputs[i].value == 'c1') {
         choices.push("technical");
         imgs.push(loadImage('img/b2.png')); 
-          locations.push([windowWidth*.8,windowHeight*.4]);
+          locations.push([windowWidth*.33,windowHeight*.375]);
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
         imgs.push(loadImage('img/b4.png'));
-          locations.push([windowWidth*.8,windowHeight*.4]);
+          locations.push([windowWidth*.38,windowHeight*.33]);
       }
       if (inputs[i].value == 'c3') {
         choices.push("leadership");
         imgs.push(loadImage('img/b1.png'));
-        locations.push([windowWidth*.8,windowHeight*.4]);
+        locations.push([windowWidth*.083,windowHeight*.325]);
       }
       if (inputs[i].value == 'c4') {
         choices.push("thinking");
         imgs.push(loadImage('img/b2.png'));
-        locations.push([windowWidth*.8,windowHeight*.4]);
+          locations.push([windowWidth*.22,windowHeight*.2]);
       }
     }}
-draw();
+    draw();
 }
 
   
@@ -123,10 +127,10 @@ function setup(){
 function draw(){
     background(244,252,245);
     for (i=0; i<choices.length; i++){
-        console.log(imgs[i],locations[i][0],locations[i][1])
+        console.log(i,imgs[i],locations[i][0],locations[i][1])
         image(imgs[i],locations[i][0],locations[i][1]);}
     
-    noLoop();
+//    noLoop();
 
 }
 

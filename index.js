@@ -94,7 +94,10 @@ function tabulateAnswers() {
       if (inputs[i].value == 'c1') {
         choices.push("technical");
         imgs.push(loadImage('img/b2.png')); 
-          locations.push([windowWidth*.33,windowHeight*.375]);
+          var x = numberRandomizer(.27,.8);
+          var y = numberRandomizer(.51,.61);
+          locations.push([windowWidth*x,windowHeight*y]);
+          console.log(x,y)
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
@@ -127,7 +130,6 @@ function setup(){
 function draw(){
     background(244,252,245);
     for (i=0; i<choices.length; i++){
-        console.log(i,imgs[i],locations[i][0],locations[i][1])
         image(imgs[i],locations[i][0],locations[i][1],imgs[i].width/2.5,imgs[i].height/2.5);}
     
 //    noLoop();
@@ -136,8 +138,8 @@ function draw(){
 
 
 
- function numberRandomizer(){
-      var x = Math.floor((Math.random() * 500) + 300); //random number between 300 and 800
+ function numberRandomizer(min,max){
+      var x = (Math.random() * (max-min) + min);
       return x;
     }
 

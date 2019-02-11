@@ -89,42 +89,44 @@ function tabulateAnswers() {
     if (inputs[i].checked) {
       if (inputs[i].value == 'c1') {
         choices.push("technical");
-        imgs.push("b2.png"); 
+        imgs.push(loadImage('img/b2.png')); 
           locations.push([windowWidth*.8,windowHeight*.4]);
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
-        imgs.push("b4.png");
-          locations.push((windowWidth*.2,windowHeight*.7));
+        imgs.push(loadImage('img/b4.png'));
+          locations.push([windowWidth*.8,windowHeight*.4]);
       }
       if (inputs[i].value == 'c3') {
         choices.push("leadership");
-        imgs.push("b1.png");
-        locations.push((windowWidth*.4,windowHeight*.3));
+        imgs.push(loadImage('img/b1.png'));
+        locations.push([windowWidth*.8,windowHeight*.4]);
       }
       if (inputs[i].value == 'c4') {
         choices.push("thinking");
-        imgs.push("b2.png");
-        locations.push((windowWidth*.8,windowHeight*.7));
+        imgs.push(loadImage('img/b2.png'));
+        locations.push([windowWidth*.8,windowHeight*.4]);
       }
-      // If you add more choices and outcomes, you must add another if statement below.
     }}
 draw();
 }
 
   
 var canvas;
-var img;
+
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);
     canvas.style("z-index","-1");
-    img = loadImage('img/b2.png');
 }
 
 function draw(){
     background(244,252,245);
-    image(img,locations[0][0],locations[0][1]);
+    for (i=0; i<choices.length; i++){
+        console.log(imgs[i],locations[i][0],locations[i][1])
+        image(imgs[i],locations[i][0],locations[i][1]);}
+    
+    noLoop();
 
 }
 

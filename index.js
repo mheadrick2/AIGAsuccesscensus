@@ -89,27 +89,28 @@ function tabulateAnswers() {
     if (inputs[i].checked) {
       if (inputs[i].value == 'c1') {
         choices.push("technical");
-        imgs.push();
-        locations.push(());
+        imgs.push("b2.png"); 
+          locations.push((windowWidth*.8,windowHeight*.4));
       }
       if (inputs[i].value == 'c2'){
         choices.push("communication");
-        imgs.push();
-        locations.push(());
+        imgs.push("b4.png");
+          locations.push((windowWidth*.2,windowHeight*.7));
       }
       if (inputs[i].value == 'c3') {
         choices.push("leadership");
-        imgs.push();
-        locations.push(());
+        imgs.push("b1.png");
+        locations.push((windowWidth*.4,windowHeight*.3));
       }
       if (inputs[i].value == 'c4') {
         choices.push("thinking");
-        imgs.push();
-        locations.push(());
+        imgs.push("b2.png");
+        locations.push((windowWidth*.8,windowHeight*.7));
       }
       // If you add more choices and outcomes, you must add another if statement below.
-    }
-  }
+    }}
+}
+
   
 var canvas;
 function setup(){
@@ -119,11 +120,16 @@ function setup(){
 }
 
 function draw(){
+    background(244,252,245);
     for (i=0; i<choices.length; i++){
-        var img = loadImage('img/'+imgs[i]+'.png');
+        console.log("hi");
+        var img = loadImage('img/'+imgs[i]);
         image(img,locations[i][0],locations[i][1]);
     }
 }
+
+
+
 
  function numberRandomizer(){
       var x = Math.floor((Math.random() * 500) + 300); //random number between 300 and 800

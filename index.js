@@ -99,7 +99,7 @@ function tabulateAnswers() {
       if (inputs[i].value == 'c2'){
         choices.push("communication");
         imgs.push(loadImage('img/b4.png'));
-          locations.push([windowWidth*.38,windowHeight*.33]);
+          locations.push([windowWidth*.38,windowHeight*.33*2]);
       }
       if (inputs[i].value == 'c3') {
         choices.push("leadership");
@@ -128,7 +128,7 @@ function draw(){
     background(244,252,245);
     for (i=0; i<choices.length; i++){
         console.log(i,imgs[i],locations[i][0],locations[i][1])
-        image(imgs[i],locations[i][0],locations[i][1]);}
+        image(imgs[i],locations[i][0],locations[i][1],imgs[i].width/2.5,imgs[i].height/2.5);}
     
 //    noLoop();
 

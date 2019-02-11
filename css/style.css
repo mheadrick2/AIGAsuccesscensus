@@ -133,9 +133,11 @@ a{
   color: white;
   border: none;
   height:5vh;
-    
+
   display: flex;
   min-width: 100vw;
+    
+/*     overflow-x:hidden;*/
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
@@ -146,13 +148,13 @@ a{
 
 .questions{
   width: 100%;
-    /* position: fixed; */
+/*     position: fixed; */
     z-index: 1;
     height: 0vh;
     top: 0;
     left: 0;
     background-color: #765eed;
-    overflow-x: scroll;
+    overflow-x: hidden;
     transition: 0.5s;
     padding-top: 0em;
     min-width: 100vw;
@@ -178,7 +180,7 @@ a{
 	padding: 2rem;
 	text-align: center;
     flex-direction: column;
-/*    overflow-x: auto;*/
+/*    overflow-x: hidden;*/
 }
 
 .questions form{

@@ -75,14 +75,19 @@ document.getElementById("myChoice").innerHTML = declaration;}
 
 
 /////////////////   for main //////////////////////
-var choices = [];
-var imgs = [];
-var locations = [];
+var allChoices = [];
+var allImgs = [];
+var allLocations = [];
+
+
+var choices1 = [];
+var imgs1 = [];
+var locations1 = [];
 
 function type1q1() {
-    choices = [];
-    imgs = [];
-    locations = [];
+    choices1 = [];
+    imgs1 = [];
+    locations1 = [];
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -90,39 +95,41 @@ function type1q1() {
     if (inputs[i].checked) {
 
       if (inputs[i].value == 'c1') {
-        choices.push("technical");
-        imgs.push(loadImage('img/b2.png')); 
+        choices1.push("technical");
+        imgs1.push(loadImage('img/b2.png')); 
           //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations.push([windowWidth*x,windowHeight*y]);
-//          console.log(x,y)
+          locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
-        choices.push("communication");
-        imgs.push(loadImage('img/b4.png'));
+        choices1.push("communication");
+        imgs1.push(loadImage('img/b4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations.push([windowWidth*x,windowHeight*y]);
+          locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
-        choices.push("leadership");
-        imgs.push(loadImage('img/b1.png'));
+        choices1.push("leadership");
+        imgs1.push(loadImage('img/b1.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations.push([windowWidth*x,windowHeight*y]);
+        locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
-        choices.push("thinking");
-        imgs.push(loadImage('img/b2.png'));
+        choices1.push("thinking");
+        imgs1.push(loadImage('img/b2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations.push([windowWidth*x,windowHeight*y]);
+         locations1.push([windowWidth*x,windowHeight*y]);
       }
     }}
+    allChoices.push(choices1);
+    allImgs.push(imgs1);
+    allLocations.push(locations1);
     draw();
 }
 
@@ -138,10 +145,7 @@ function setup(){
 function draw(){
     background(244,252,245);
     for (i=0; i<choices.length; i++){
-        image(imgs[i],locations[i][0],locations[i][1],imgs[i].width/2.5,imgs[i].height/2.5);}
-    
-//    noLoop();
-
+        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
 }
 
 

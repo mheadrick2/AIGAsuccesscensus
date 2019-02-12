@@ -105,7 +105,6 @@ var locations4 = [];
 
 function waitscroll() {
   setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
-      document.getElementById("forest").scrollIntoView();
                        }, 2000);
     if (qIndex ==1){
         moveq2();
@@ -120,6 +119,20 @@ function waitscroll() {
         zoomOut();
     }
 }
+
+function waitscroll2() {
+  setTimeout(function(){ 
+      document.getElementById("fieldofwork").scrollIntoView();
+                       }, 2000);
+    
+}
+
+//function waitscroll3() {
+//  setTimeout(function(){ 
+//      document.getElementById("honeskills").scrollIntoView();
+//                       }, 2000);
+//    
+//}
 //wait 2 sec before switching screens
 
 //function scrolltopos(){
@@ -283,9 +296,9 @@ function type1q2() {
     
     draw();
     
-    openNav()
+    closeNav();
     
-    waitscroll();
+     waitscroll2();
 }
 
 function type1q3() {
@@ -414,9 +427,9 @@ function type1q3() {
         allLocations.push(locations3[i]);}
     draw();
     
-    openNav();
+    closeNav();
     
-    waitscroll();
+    waitscroll3();
 }
 
 function type1q4() {

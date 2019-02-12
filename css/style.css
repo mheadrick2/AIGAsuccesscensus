@@ -152,7 +152,6 @@ a{
 
 }
 /*submit button style abover^^*/
-
 .allqs {
   font-size: 20px;
   cursor: pointer;
@@ -163,23 +162,14 @@ a{
 
   display: flex;
   min-width: 100vw;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 93f8c78bc53ab5c51c400ea3b66fc766a19165d2
   overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
 .allqs:hover {
-<<<<<<< HEAD
 /*  background-color:#444;*/
   height:70vh;
-=======
-  background-color:#444;
-    height:70vh;
->>>>>>> 93f8c78bc53ab5c51c400ea3b66fc766a19165d2
 }
 
 
@@ -187,7 +177,7 @@ a{
   width: 100%;
 /*     position: fixed; */
     z-index: 1;
-    height: 0vh;
+    height: 5vh;
     top: 0;
     left: 0;
     background-color: #765eed;
@@ -196,9 +186,10 @@ a{
     padding-top: 0em;
     min-width: 100vw;
     display: inline-block;
-}
+    
+    opacity: 0;
+    }
 /* questions class unfolds when you click #allqs*/
-
 .questions a:hover {
   color: #f1f1f1;
 }

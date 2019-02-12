@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
     font-family: urw-din, 'Poppins', sans-serif;
     background-color:#F4FCF5;
+/*
+    overflow-x:hidden;
+    overflow-y:hidden
+*/
 }
 
 /*Type*/
@@ -159,14 +163,23 @@ a{
 
   display: flex;
   min-width: 100vw;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 93f8c78bc53ab5c51c400ea3b66fc766a19165d2
   overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
 .allqs:hover {
+<<<<<<< HEAD
 /*  background-color:#444;*/
   height:70vh;
+=======
+  background-color:#444;
+    height:70vh;
+>>>>>>> 93f8c78bc53ab5c51c400ea3b66fc766a19165d2
 }
 
 

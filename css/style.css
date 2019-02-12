@@ -264,3 +264,112 @@ img{
     height: auto;
 }
 
+/*BELOW IS FLOATING BUTTON TEST FOR FINAL.HTML*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  opacity: 1;
+  background-color: #fefefe;
+  margin-right: 8%;
+  padding: 4em 3em;
+  width: 25%;
+  transition: all 0.5s ease-in-out;
+  float: right;
+}
+
+.modal-content p{
+    font-weight:600;
+    font-size: 1.2em;
+ 
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: 16%;
+    right: 37.5%;
+    position: fixed;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: 16%;
+    right: 37.5%;
+    position: fixed;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#btnContainer{
+    position: fixed;
+      bottom: 3%;
+      right: 3%; 
+}
+
+#btnContainer2{
+    position: fixed;
+      bottom: 3%;
+      right: 8%; 
+}
+
+#myBtn{
+    background-color : #FF0000;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-color: #FF0000;
+    width: 40px;
+    height:40px;
+    text-align: center;
+}
+
+#myBtn2{
+    background-color : #FF0000;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-color: #FF0000;
+    width: 40px;
+    height:40px;
+    text-align: center;
+}
+
+
+
+
+/*____________________________________________________*/

@@ -79,6 +79,7 @@ var allChoices = [];
 var allImgs = [];
 var allLocations = [];
 
+var qIndex= 0;
 
 var choices1 = [];
 var imgs1 = [];
@@ -96,33 +97,61 @@ var choices4 = [];
 var imgs4 = [];
 var locations4 = [];
 
-//var canvas;
-//
-//function setup(){
-//    canvas = createCanvas(windowWidth,windowHeight);
-//    canvas.position(0,0);
-//    canvas.style("z-index","-1");
-//}
-//
-//function draw(){
-//    background(244,252,245);
-//    for (i=0; i<choices1.length; i++){
-//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-//    for (i=0; i<choices2.length; i++){
-//        console.log(imgs2)
-//        image(imgs2[i],locations2[i][0],locations2[i][1],imgs2[i].width/2.5,imgs2[i].height/2.5);}
-//    for (i=0; i<choices3.length; i++){
-//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-//    for (i=0; i<choices4.length; i++){
-//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-//}
 
+ function numberRandomizer(min,max){
+      var x = (Math.random() * (max-min) + min);
+      return x;
+    }
+
+function waitscroll() {
+  setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
+      document.getElementById("forest").scrollIntoView();
+                       }, 2000);
+    if (qIndex ==1){
+        moveq2();
+    }
+    if (qIndex ==2){
+        moveq3();
+    }
+    if (qIndex ==3){
+        moveq4();
+    }
+    if (qIndex ==4){
+        zoomOut();
+    }
+}
+//wait 2 sec before switching screens
+
+//function scrolltopos(){
+//      document.getElementById("beyondwork").scrollIntoView();
+//      document.getElementById("forest").scrollIntoView();
+//
+//     }
+    
+// TRING SIDE NAV  
+function openNav() {
+  document.getElementById("plswork").setAttribute("style","height:70vh");
+    document.getElementById("plswork2").setAttribute("style","height:70vh");
+    
+    document.getElementById("plswork3").setAttribute("style","height:70vh");
+    document.getElementById("plswork4").setAttribute("style","height:70vh");
+//  document.getElementsByClassName("questions").setAttribute("style","height:70vh");
+}
+
+function closeNav() {
+    document.getElementById("plswork").style.removeProperty('style');
+    document.getElementById("plswork").setAttribute("style","height:5vh"); 
+    document.getElementById("plswork2").setAttribute("style","height:5vh");
+    document.getElementById("plswork3").setAttribute("style","height:5vh");
+    document.getElementById("plswork4").setAttribute("style","height:5vh");
+}
 //********************************SALARY AND SATISFACTION*****************************
 
 function type1q1() {
     choices1 = [];
     imgs1 = [];
     locations1 = [];
+    qIndex = 1;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -171,12 +200,14 @@ function type1q1() {
     closeNav();
     
     waitscroll();
+    
 }
 
 function type1q2() {
     choices2 = [];
     imgs2 = [];
     locations2 = [];
+    qIndex = 2;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -261,6 +292,7 @@ function type1q3() {
     choices3 = [];
     imgs3 = [];
     locations3 = [];
+    qIndex = 3;
     var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -382,15 +414,16 @@ function type1q3() {
         allLocations.push(locations3[i]);}
     draw();
     
-    openNav()
+    openNav();
     
-    waitscroll()
+    waitscroll();
 }
 
 function type1q4() {
     choices4 = [];
     imgs4 = [];
     locations4 = [];
+    qIndex = 4;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -456,9 +489,9 @@ function type1q4() {
         allLocations.push(locations4[i]);}
     draw();
     
-    openNav()
+    openNav();
     
-    waitscroll()
+    waitscroll();
 }
 
 
@@ -2163,78 +2196,3 @@ function type6q4() {
     scrolltopos()
 }
 
-
- function numberRandomizer(min,max){
-      var x = (Math.random() * (max-min) + min);
-      return x;
-    }
-
-function waitscroll() {
-  setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
-      document.getElementById("forest").scrollIntoView();
-                       }, 2000);
-}
-//wait 2 sec before switching screens
-
-//function scrolltopos(){
-//      document.getElementById("beyondwork").scrollIntoView();
-//      document.getElementById("forest").scrollIntoView();
-//
-//     }
-    
-// TRING SIDE NAV  
-function openNav() {
-  document.getElementById("plswork").setAttribute("style","height:70vh");
-    document.getElementById("plswork2").setAttribute("style","height:70vh");
-    
-    document.getElementById("plswork3").setAttribute("style","height:70vh");
-    document.getElementById("plswork4").setAttribute("style","height:70vh");
-//  document.getElementsByClassName("questions").setAttribute("style","height:70vh");
-}
-
-function closeNav() {
-    document.getElementById("plswork").style.removeProperty('style');
-    document.getElementById("plswork").setAttribute("style","height:5vh");
-    
-    document.getElementById("plswork2").setAttribute("style","height:5vh");
-    
-    document.getElementById("plswork3").setAttribute("style","height:5vh");
-    
-    document.getElementById("plswork4").setAttribute("style","height:5vh");
-}
-//
-//var coll = document.getElementsByClassName("collapsible");
-//var i;
-//
-//for (i = 0; i < coll.length; i++) {
-//  coll[i].addEventListener("click", function() {
-//    this.classList.toggle("active");
-//    var content = document.getElementById("allqs");
-//    if (content.style.display === "flex") {
-//      content.style.display = "none";
-//    } else {
-//      content.style.display = "flex";
-//    }
-//  });
-//}
-//    
-    
-
-
-//    var elem = document.getElementById('quest1'); 
-//      elem.style.backgroundColor="blue";
-//      elem.style.opacity="1";
-//    var c1scorepx = "c1score"+"px";
-//      elem.style.top= "c1scorepx";
-
-
-
-//const init = function(){
-//	let items = document.querySelectorAll('section');
-//	for (let i = 0; i < items.length; i++){
-//		items[i].style.background = randomColor({luminosity: 'light'});
-//	}
-//	cssScrollSnapPolyfill()
-//}
-//init();
-//

@@ -152,7 +152,7 @@ a{
 .allqs {
   font-size: 20px;
   cursor: pointer;
-  background-color:#765eed;
+/*  background-color:#765eed;*/
   color: white;
   border: none;
   height:5vh;
@@ -160,12 +160,13 @@ a{
   display: flex;
   min-width: 100vw;
     
-/*     overflow-x:hidden;*/
+  overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
 .allqs:hover {
-  background-color:#444;
+/*  background-color:#444;*/
+  height:70vh;
 }
 
 
@@ -359,47 +360,46 @@ img{
 }
 
 
-#btnContainer{
-    position: fixed;
+#btnContainer, #btnContainer2{
+    position: absolute;
       bottom: 3%;
       right: 3%; 
     cursor: pointer;
 }
 
 #btnContainer2{
-    position: fixed;
+    position: absolute;
       bottom: 3%;
-      right: 10%;
+      right: 9%;
     cursor: pointer;
 }
 
-#myBtn{
-    background-color : #FF0000;
-    color: white;
-    padding: 15px 0px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border-color: #FF0000;
-    width: 60px;
-    height:60px;
-    text-align: center;
+#myBtn:hover, #myBtn2:hover{
+    
+    transform:scale(1.1);
+    transform-origin: center;
 }
 
-#myBtn2{
-    background-color : #FF0000;
-    color: white;
-    padding: 15px 0px;
+#myBtn, #myBtn2{
+/*    padding: 15px 0px;*/
+    z-index: 1;
     box-sizing: border-box;
     border-radius: 50%;
-    border-color: #FF0000;
-    width: 60px;
-    height:60px;
+    border: solid 2.5px #FF0000;
+    width: 5vw;
+    height:5vw;
     text-align: center;
+    transition: .2s ease-in-out all;
+    transform-origin: center;
 }
 
 fa, .far, .fas {
+    color:#FF0000;
+    position: absolute;
+    bottom: 20%;
+    right: 35%;
     font-family: "Font Awesome 5 Free";
-    font-size: x-large;
+    font-size: x-large;}
 
 
 

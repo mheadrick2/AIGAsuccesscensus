@@ -231,7 +231,7 @@ function setup(){
 
 function draw(){
     background(244,252,245);
-    for (i=0; i<choices.length; i++){
+    for (i=0; i<choices1.length; i++){
         image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
 }
 

@@ -162,9 +162,10 @@ function type1q1() {
          locations1.push([windowWidth*x,windowHeight*y]);
       }
     }}
-    allChoices.push(choices1);
-    allImgs.push(imgs1);
-    allLocations.push(locations1);
+    for (i=0; i<choices1.length; i++){
+        allChoices.push(choices1[i]);
+        allImgs.push(imgs1[i]);
+        allLocations.push(locations1[i]);}
     draw();
     
     closeNav();

@@ -126,6 +126,29 @@ a{
     margin-bottom:3em;
 }
 
+.button3{
+    font-weight: 800; 
+    text-align: center;
+    color:black;
+}
+
+.submitcontain{
+    background: white;
+    display: inline-block;
+    margin: 2em 0em;
+    padding:1em;
+    width: 8%;
+    height:5%; 
+    border: solid 4px #765eed;
+}
+
+.submitcontain:hover{
+    border: solid 4px #FF0000;
+
+
+}
+/*submit button style abover^^*/
+
 .allqs {
   font-size: 20px;
   cursor: pointer;
@@ -189,6 +212,7 @@ a{
 }
    
 .questions h1{
+    padding-top:1em;
     color:white;
     font-size: 2em;
     transition: 0.3s;
@@ -218,10 +242,12 @@ label:hover{
     text-decoration: underline;      
 }
 
+/*
 #answer5{
     height: 2em;
     background: blue;
 }
+*/
 
 /*
 .mapparts{

@@ -133,7 +133,7 @@ function type1q1() {
     allLocations.push(locations1);
     draw();
     
-    openNav();
+    closeNav();
     
     waitscroll();
 }

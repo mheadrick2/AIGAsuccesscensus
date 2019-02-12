@@ -40,11 +40,11 @@ function moveq2(){
 }
 
 function moveq3(){
-    dx = 0; dy = -width;
+    dx = -width; dy = -width;
     console.log("movedq3");
 }
 function moveq4(){
-    dx = width; dy = 0;
+    dx = 0; dy = -width;
     console.log("movedq4");
 }
 

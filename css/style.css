@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     background-color:#F4FCF5;
+/*
+    overflow-x:hidden;
+    overflow-y:hidden
+*/
 }
 
 /*Type*/
@@ -159,13 +163,14 @@ a{
 
   display: flex;
   min-width: 100vw;
-    
-/*     overflow-x:hidden;*/
+
+  overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
 .allqs:hover {
   background-color:#444;
+    height:70vh;
 }
 
 

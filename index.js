@@ -171,6 +171,7 @@ function type1q1() {
     closeNav();
     
     waitscroll();
+    
 }
 
 function type1q2() {
@@ -382,9 +383,9 @@ function type1q3() {
         allLocations.push(locations3[i]);}
     draw();
     
-    openNav()
+    openNav();
     
-    waitscroll()
+    waitscroll();
 }
 
 function type1q4() {
@@ -456,9 +457,10 @@ function type1q4() {
         allLocations.push(locations4[i]);}
     draw();
     
-    openNav()
+    openNav();
     
-    waitscroll()
+    waitscroll();
+    zoomOut();
 }
 
 

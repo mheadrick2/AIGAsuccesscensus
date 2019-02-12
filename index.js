@@ -245,9 +245,10 @@ function type1q2() {
         
     }}
     console.log(imgs2)
-    allChoices.push(choices1);
-    allImgs.push(imgs1);
-    allLocations.push(locations1);
+    for (i=0; i<choices2.length; i++){
+        allChoices.push(choices2[i]);
+        allImgs.push(imgs2[i]);
+        allLocations.push(locations2[i]);}
     
     draw();
     

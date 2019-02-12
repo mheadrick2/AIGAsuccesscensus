@@ -133,9 +133,9 @@ function type1q1() {
     allLocations.push(locations1);
     draw();
     
-    openNav()
+    openNav();
     
-    scrolltopos()
+    waitscroll();
 }
 
 
@@ -242,11 +242,18 @@ function draw(){
       return x;
     }
 
-function scrolltopos(){
-      document.getElementById("beyondwork").scrollIntoView();
+function waitscroll() {
+  setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
       document.getElementById("forest").scrollIntoView();
+                       }, 2000);
+}
+//wait 2 sec before switching screens
 
-     }
+//function scrolltopos(){
+//      document.getElementById("beyondwork").scrollIntoView();
+//      document.getElementById("forest").scrollIntoView();
+//
+//     }
     
 // TRING SIDE NAV  
 function openNav() {

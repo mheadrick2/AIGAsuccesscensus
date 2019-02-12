@@ -160,12 +160,13 @@ a{
   display: flex;
   min-width: 100vw;
     
-/*     overflow-x:hidden;*/
+     overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
 
 .allqs:hover {
   background-color:#444;
+    height:50vh;
 }
 
 

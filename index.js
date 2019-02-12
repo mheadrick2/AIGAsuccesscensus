@@ -96,26 +96,26 @@ var choices4 = [];
 var imgs4 = [];
 var locations4 = [];
 
-var canvas;
-
-function setup(){
-    canvas = createCanvas(windowWidth,windowHeight);
-    canvas.position(0,0);
-    canvas.style("z-index","-1");
-}
-
-function draw(){
-    background(244,252,245);
-    for (i=0; i<choices1.length; i++){
-        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-    for (i=0; i<choices2.length; i++){
-        console.log(imgs2)
-        image(imgs2[i],locations2[i][0],locations2[i][1],imgs2[i].width/2.5,imgs2[i].height/2.5);}
-    for (i=0; i<choices3.length; i++){
-        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-    for (i=0; i<choices4.length; i++){
-        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-}
+//var canvas;
+//
+//function setup(){
+//    canvas = createCanvas(windowWidth,windowHeight);
+//    canvas.position(0,0);
+//    canvas.style("z-index","-1");
+//}
+//
+//function draw(){
+//    background(244,252,245);
+//    for (i=0; i<choices1.length; i++){
+//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+//    for (i=0; i<choices2.length; i++){
+//        console.log(imgs2)
+//        image(imgs2[i],locations2[i][0],locations2[i][1],imgs2[i].width/2.5,imgs2[i].height/2.5);}
+//    for (i=0; i<choices3.length; i++){
+//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+//    for (i=0; i<choices4.length; i++){
+//        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+//}
 
 //********************************SALARY AND SATISFACTION*****************************
 
@@ -254,13 +254,13 @@ function type1q2() {
     
     openNav()
     
-//    waitscroll()
+    waitscroll();
 }
 
 function type1q3() {
-    choices1 = [];
-    imgs1 = [];
-    locations1 = [];
+    choices3 = [];
+    imgs3 = [];
+    locations3 = [];
     var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -268,117 +268,118 @@ function type1q3() {
     if (inputs[i].checked) {
 
       if (inputs[i].value == 'c1') {
-        choices1.push("technical");
-        imgs1.push(loadImage('img/f1.png')); 
+        choices3.push("technical");
+        imgs3.push(loadImage('img/f1.png')); 
           //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/f2.png'));
+        choices3.push("communication");
+        imgs3.push(loadImage('img/f2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/f4.png'));
+        choices3.push("leadership");
+        imgs3.push(loadImage('img/f4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f3.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f3.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
         
         if (inputs[i].value == 'c5'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/f6.png'));
+        choices3.push("communication");
+        imgs3.push(loadImage('img/f6.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/f2.png'));
+        choices3.push("leadership");
+        imgs3.push(loadImage('img/f2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c7') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f3.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f3.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
         if (inputs[i].value == 'c8') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f4.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c9') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f5.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f5.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c10') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f5.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f5.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c11') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f4.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c12') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f2.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c13') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/f6.png'));
+        choices3.push("thinking");
+        imgs3.push(loadImage('img/f6.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations3.push([windowWidth*x,windowHeight*y]);
       }
         
         
         
     }}
-    allChoices.push(choices1);
-    allImgs.push(imgs1);
-    allLocations.push(locations1);
+    for (i=0; i<choices3.length; i++){
+        allChoices.push(choices3[i]);
+        allImgs.push(imgs3[i]);
+        allLocations.push(locations3[i]);}
     draw();
     
     openNav()
@@ -387,9 +388,9 @@ function type1q3() {
 }
 
 function type1q4() {
-    choices1 = [];
-    imgs1 = [];
-    locations1 = [];
+    choices4 = [];
+    imgs4 = [];
+    locations4 = [];
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -397,61 +398,62 @@ function type1q4() {
     if (inputs[i].checked) {
 
       if (inputs[i].value == 'c1') {
-        choices1.push("technical");
-        imgs1.push(loadImage('img/m1.png')); 
+        choices4.push("technical");
+        imgs4.push(loadImage('img/m1.png')); 
           //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations4.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/m3.png'));
+        choices4.push("communication");
+        imgs4.push(loadImage('img/m3.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations4.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/m2.png'));
+        choices4.push("leadership");
+        imgs4.push(loadImage('img/m2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations4.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/m3.png'));
+        choices4.push("thinking");
+        imgs4.push(loadImage('img/m3.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations4.push([windowWidth*x,windowHeight*y]);
       }
         
         if (inputs[i].value == 'c5'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/m4.png'));
+        choices4.push("communication");
+        imgs4.push(loadImage('img/m4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations4.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/m4.png'));
+        choices4.push("leadership");
+        imgs4.push(loadImage('img/m4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations4.push([windowWidth*x,windowHeight*y]);
       }
         
         
         
     }}
-    allChoices.push(choices1);
-    allImgs.push(imgs1);
-    allLocations.push(locations1);
+    for (i=0; i<choices4.length; i++){
+        allChoices.push(choices4[i]);
+        allImgs.push(imgs4[i]);
+        allLocations.push(locations4[i]);}
     draw();
     
     openNav()

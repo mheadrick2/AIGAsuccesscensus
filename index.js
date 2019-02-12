@@ -84,7 +84,38 @@ var choices1 = [];
 var imgs1 = [];
 var locations1 = [];
 
+var choices2 = [];
+var imgs2 = [];
+var locations2 = [];
 
+var choices3 = [];
+var imgs3 = [];
+var locations3 = [];
+
+var choices4 = [];
+var imgs4 = [];
+var locations4 = [];
+
+var canvas;
+
+function setup(){
+    canvas = createCanvas(windowWidth,windowHeight);
+    canvas.position(0,0);
+    canvas.style("z-index","-1");
+}
+
+function draw(){
+    background(244,252,245);
+    for (i=0; i<choices1.length; i++){
+        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+    for (i=0; i<choices2.length; i++){
+        console.log(imgs2)
+        image(imgs2[i],locations2[i][0],locations2[i][1],imgs2[i].width/2.5,imgs2[i].height/2.5);}
+    for (i=0; i<choices3.length; i++){
+        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+    for (i=0; i<choices4.length; i++){
+        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
+}
 
 //********************************SALARY AND SATISFACTION*****************************
 
@@ -142,9 +173,9 @@ function type1q1() {
 }
 
 function type1q2() {
-    choices1 = [];
-    imgs1 = [];
-    locations1 = [];
+    choices2 = [];
+    imgs2 = [];
+    locations2 = [];
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -152,74 +183,76 @@ function type1q2() {
     if (inputs[i].checked) {
 
       if (inputs[i].value == 'c1') {
-        choices1.push("technical");
-        imgs1.push(loadImage('img/s3.png')); 
+        choices2.push("onmyown");
+        imgs2.push(loadImage('img/s3.png')); 
           //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/s5.png'));
+        choices2.push("freelance");
+        imgs2.push(loadImage('img/s5.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/s4.png'));
+        choices2.push("designforfriends");
+        imgs2.push(loadImage('img/s4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/s2.png'));
+        choices2.push("volunteer");
+        imgs2.push(loadImage('img/s2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations2.push([windowWidth*x,windowHeight*y]);
       }
         
         if (inputs[i].value == 'c5'){
-        choices1.push("communication");
-        imgs1.push(loadImage('img/s2.png'));
+        choices2.push("teach");
+        imgs2.push(loadImage('img/s2.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-          locations1.push([windowWidth*x,windowHeight*y]);
+          locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
-        choices1.push("leadership");
-        imgs1.push(loadImage('img/s3.png'));
+        choices2.push("maintain");
+        imgs2.push(loadImage('img/s3.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-        locations1.push([windowWidth*x,windowHeight*y]);
+        locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c7') {
-        choices1.push("thinking");
-        imgs1.push(loadImage('img/s4.png'));
+        choices2.push("none");
+        imgs2.push(loadImage('img/s4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
           var y = numberRandomizer(.51,.61);
-         locations1.push([windowWidth*x,windowHeight*y]);
+         locations2.push([windowWidth*x,windowHeight*y]);
       }
         
         
         
     }}
+    console.log(imgs2)
     allChoices.push(choices1);
     allImgs.push(imgs1);
     allLocations.push(locations1);
+    
     draw();
     
     openNav()
     
-    scrolltopos()
+//    waitscroll()
 }
 
 function type1q3() {
@@ -348,7 +381,7 @@ function type1q3() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type1q4() {
@@ -421,7 +454,7 @@ function type1q4() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 
@@ -559,7 +592,7 @@ function type2q2() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type2q3() {
@@ -688,7 +721,7 @@ function type2q3() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type2q4() {
@@ -761,7 +794,7 @@ function type2q4() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 
@@ -899,7 +932,7 @@ function type3q2() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type3q3() {
@@ -1028,7 +1061,7 @@ function type3q3() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type3q4() {
@@ -1101,7 +1134,7 @@ function type3q4() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 
@@ -1239,7 +1272,7 @@ function type4q2() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type4q3() {
@@ -1368,7 +1401,7 @@ function type4q3() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 function type4q4() {
@@ -1441,7 +1474,7 @@ function type4q4() {
     
     openNav()
     
-    scrolltopos()
+    waitscroll()
 }
 
 
@@ -2125,22 +2158,6 @@ function type6q4() {
     
     scrolltopos()
 }
-
-  
-var canvas;
-
-function setup(){
-    canvas = createCanvas(windowWidth,windowHeight);
-    canvas.position(0,0);
-    canvas.style("z-index","-1");
-}
-
-function draw(){
-    background(244,252,245);
-    for (i=0; i<choices1.length; i++){
-        image(imgs1[i],locations1[i][0],locations1[i][1],imgs1[i].width/2.5,imgs1[i].height/2.5);}
-}
-
 
 
  function numberRandomizer(min,max){

@@ -127,12 +127,12 @@ function waitscroll2() {
     
 }
 
-//function waitscroll3() {
-//  setTimeout(function(){ 
-//      document.getElementById("honeskills").scrollIntoView();
-//                       }, 2000);
-//    
-//}
+function waitscroll3() {
+  setTimeout(function(){ 
+      document.getElementById("honeskills").scrollIntoView();
+                       }, 2000);
+    
+}
 //wait 2 sec before switching screens
 
 //function scrolltopos(){

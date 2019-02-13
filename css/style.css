@@ -187,7 +187,6 @@ a{
     min-width: 100vw;
     display: inline-block;
     
-    opacity: 0;
     }
 /* questions class unfolds when you click #allqs*/
 .questions a:hover {

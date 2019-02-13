@@ -148,6 +148,7 @@ function type1q1() {
     choices1 = [];
     imgs1 = [];
     locations1 = [];
+    qIndex = 1;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -158,32 +159,32 @@ function type1q1() {
         choices1.push("technical");
         imgs1.push(loadImage('img/b2.png')); 
           //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.51,.8);
+          var y = numberRandomizer(.28,.32);
           locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
         choices1.push("communication");
         imgs1.push(loadImage('img/b4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.32,.38);
+          var y = numberRandomizer(.12,.2);
           locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
         choices1.push("leadership");
         imgs1.push(loadImage('img/b1.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.005,.2);
+          var y = numberRandomizer(.25,.32);
         locations1.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
         choices1.push("thinking");
         imgs1.push(loadImage('img/b2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.15,.25);
+          var y = numberRandomizer(.12,.19);
          locations1.push([windowWidth*x,windowHeight*y]);
       }
     }}
@@ -203,6 +204,7 @@ function type1q2() {
     choices2 = [];
     imgs2 = [];
     locations2 = [];
+    qIndex = 2;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -213,32 +215,32 @@ function type1q2() {
         choices2.push("onmyown");
         imgs2.push(loadImage('img/s3.png')); 
           //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.75,.86);
+          var y = numberRandomizer(.05,.1);
           locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
         choices2.push("freelance");
         imgs2.push(loadImage('img/s5.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.7,.74);
+          var y = numberRandomizer(.11,.22);
           locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
         choices2.push("designforfriends");
         imgs2.push(loadImage('img/s4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.8,.88);
+          var y = numberRandomizer(.13,.21);
         locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
         choices2.push("volunteer");
         imgs2.push(loadImage('img/s2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.59,.63);
+          var y = numberRandomizer(.13,.21);
          locations2.push([windowWidth*x,windowHeight*y]);
       }
         
@@ -246,24 +248,24 @@ function type1q2() {
         choices2.push("teach");
         imgs2.push(loadImage('img/s2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.86,.93);
+          var y = numberRandomizer(.28,.32);
           locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
         choices2.push("maintain");
         imgs2.push(loadImage('img/s3.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.55,.58);
+          var y = numberRandomizer(.33,.38);
         locations2.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c7') {
         choices2.push("none");
         imgs2.push(loadImage('img/s4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.9,.96);
+          var y = numberRandomizer(.3,.37);
          locations2.push([windowWidth*x,windowHeight*y]);
       }
         
@@ -287,6 +289,7 @@ function type1q3() {
     choices3 = [];
     imgs3 = [];
     locations3 = [];
+    qIndex = 3;
     var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -294,108 +297,108 @@ function type1q3() {
     if (inputs[i].checked) {
 
       if (inputs[i].value == 'c1') {
-        choices3.push("technical");
+        choices3.push("UI/UX/Inter/Exp");
         imgs3.push(loadImage('img/f1.png')); 
           //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.8,.85);
+          var y = numberRandomizer(.75,.81);
           locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c2'){
-        choices3.push("communication");
+        choices3.push("Comm/Graphic Des");
         imgs3.push(loadImage('img/f2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.84,.92);
+          var y = numberRandomizer(.5,.55);
           locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c3') {
-        choices3.push("leadership");
+        choices3.push("Motion/Film/Production");
         imgs3.push(loadImage('img/f4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.65,.71);
+          var y = numberRandomizer(.54,.57);
         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c4') {
-        choices3.push("thinking");
+        choices3.push("Emerging Tech");
         imgs3.push(loadImage('img/f3.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.54,.59);
+          var y = numberRandomizer(.52,.56);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
         
         if (inputs[i].value == 'c5'){
-        choices3.push("communication");
+        choices3.push("Research/Data Analy");
         imgs3.push(loadImage('img/f6.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.9,.97);
+          var y = numberRandomizer(.82,.84);
           locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
-        choices3.push("leadership");
+        choices3.push("Front End/Web");
         imgs3.push(loadImage('img/f2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.6,.67);
+          var y = numberRandomizer(.75,.78);
         locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c7') {
-        choices3.push("thinking");
+        choices3.push("Civic/Impact/Service/Strat");
         imgs3.push(loadImage('img/f3.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.52,.56);
+          var y = numberRandomizer(.72,.77);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
         if (inputs[i].value == 'c8') {
-        choices3.push("thinking");
+        choices3.push("Interior Des");
         imgs3.push(loadImage('img/f4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.92,.95);
+          var y = numberRandomizer(.82,.86);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c9') {
-        choices3.push("thinking");
+        choices3.push("Illustration");
         imgs3.push(loadImage('img/f5.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.57,.65);
+          var y = numberRandomizer(.83,.88);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c10') {
-        choices3.push("thinking");
+        choices3.push("Marketing");
         imgs3.push(loadImage('img/f5.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.7,.77);
+          var y = numberRandomizer(.52,.57);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c11') {
-        choices3.push("thinking");
+        choices3.push("Edu");
         imgs3.push(loadImage('img/f4.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.7,.74);
+          var y = numberRandomizer(.78,.82);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c12') {
-        choices3.push("thinking");
+        choices3.push("Automotive/Product");
         imgs3.push(loadImage('img/f2.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.58,.65);
+          var y = numberRandomizer(.42,.45);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c13') {
-        choices3.push("thinking");
+        choices3.push("Fashion");
         imgs3.push(loadImage('img/f6.png'));
         //locations
-          var x = numberRandomizer(.27,.8);
-          var y = numberRandomizer(.51,.61);
+          var x = numberRandomizer(.74,.79);
+          var y = numberRandomizer(.83,.86);
          locations3.push([windowWidth*x,windowHeight*y]);
       }
         
@@ -417,6 +420,7 @@ function type1q4() {
     choices4 = [];
     imgs4 = [];
     locations4 = [];
+    qIndex = 4;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -457,7 +461,7 @@ function type1q4() {
       }
         
         if (inputs[i].value == 'c5'){
-        choices4.push("communication");
+        choices4.push("Creative");
         imgs4.push(loadImage('img/m4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
@@ -465,7 +469,7 @@ function type1q4() {
           locations4.push([windowWidth*x,windowHeight*y]);
       }
       if (inputs[i].value == 'c6') {
-        choices4.push("leadership");
+        choices4.push("Digital Des");
         imgs4.push(loadImage('img/m4.png'));
         //locations
           var x = numberRandomizer(.27,.8);
@@ -484,10 +488,8 @@ function type1q4() {
     
     openNav();
     
-    zoomOut();
+    waitscroll();
 }
-
-
 
 //****************************SALARY AND STABILITY*****************************
 

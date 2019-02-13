@@ -159,7 +159,7 @@ a{
   color: white;
   border: none;
   height:5vh;
-
+  transition: 0.5s;
   display: flex;
   min-width: 100vw;
     

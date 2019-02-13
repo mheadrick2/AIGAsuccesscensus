@@ -30,7 +30,7 @@ function draw(){
         translate(allLocations[i][0]+allImgs[i].width*.5+x,allLocations[i][1]+allImgs[i].height*.5+y);
         scale(s/2.5);
         image(allImgs[i],-allImgs[i].width*.5, -allImgs[i].height*.5);
-         pop();
+        pop();
     }
    
 }

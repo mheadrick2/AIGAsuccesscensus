@@ -79,8 +79,6 @@ var allChoices = [];
 var allImgs = [];
 var allLocations = [];
 
-var qIndex= 0;
-
 var choices1 = [];
 var imgs1 = [];
 var locations1 = [];
@@ -103,43 +101,7 @@ var locations4 = [];
       return x;
     }
 
-function waitscroll() {
-  setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
-                       }, 2000);
-    if (qIndex ==1){
-        moveq2();
-    }
-    if (qIndex ==2){
-        moveq3();
-    }
-    if (qIndex ==3){
-        moveq4();
-    }
-    if (qIndex ==4){
-        zoomOut();
-    }
-}
 
-function waitscroll2() {
-  setTimeout(function(){ 
-      document.getElementById("fieldofwork").scrollIntoView();
-                       }, 2000);
-    
-}
-
-function waitscroll3() {
-  setTimeout(function(){ 
-      document.getElementById("honeskills").scrollIntoView();
-                       }, 2000);
-    
-}
-//wait 2 sec before switching screens
-
-//function scrolltopos(){
-//      document.getElementById("beyondwork").scrollIntoView();
-//      document.getElementById("forest").scrollIntoView();
-//
-//     }
     
 // TRING SIDE NAV  
 function openNav() {
@@ -158,13 +120,34 @@ function closeNav() {
     document.getElementById("plswork3").setAttribute("style","height:5vh");
     document.getElementById("plswork4").setAttribute("style","height:5vh");
 }
+
+function waitscroll() {
+  setTimeout(function(){ document.getElementById("beyondwork").scrollIntoView();
+                       }, 2000);
+    moveq2();
+}
+
+function waitscroll2() {
+  setTimeout(function(){ 
+      document.getElementById("fieldofwork").scrollIntoView();
+                       }, 2000);
+    moveq3();
+    
+}
+
+function waitscroll3() {
+  setTimeout(function(){ 
+      document.getElementById("honeskills").scrollIntoView();
+                       }, 2000);
+    moveq4();
+    
+}
 //********************************SALARY AND SATISFACTION*****************************
 
 function type1q1() {
     choices1 = [];
     imgs1 = [];
     locations1 = [];
-    qIndex = 1;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -220,7 +203,6 @@ function type1q2() {
     choices2 = [];
     imgs2 = [];
     locations2 = [];
-    qIndex = 2;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -305,7 +287,6 @@ function type1q3() {
     choices3 = [];
     imgs3 = [];
     locations3 = [];
-    qIndex = 3;
     var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -436,7 +417,6 @@ function type1q4() {
     choices4 = [];
     imgs4 = [];
     locations4 = [];
-    qIndex = 4;
   var inputs = document.getElementsByTagName('input');
   // loop through all the radio inputs
   for (i=0; i<inputs.length; i++) {
@@ -504,7 +484,7 @@ function type1q4() {
     
     openNav();
     
-    waitscroll();
+    zoomOut();
 }
 
 

@@ -15,13 +15,13 @@ function setup(){
 }
 
 function draw(){
-    //background(bg);
+    background(255,255,255);
 //    console.log("drawing..");
     ease();
     
     push();
     translate(x+bg.width*.5, y+bg.height*.5);
-    scale(s);
+    scale(s/1680*windowWidth);
     image(bg, -bg.width*.5, -bg.height*.5);
     pop();
     for (i=0; i<allChoices.length;i++){
@@ -34,18 +34,20 @@ function draw(){
     }
    
 }
+
+
 function moveq2(){
-    dx = -width; dy = 0;
-    console.log("movedq2");
+    setTimeout(function(){dx = -width; dy = 0;
+    console.log("movedq2")},2000);
 }
 
 function moveq3(){
-    dx = -width; dy = -width;
-    console.log("movedq3");
+    setTimeout(function(){dx = -width; dy = -height;
+    console.log("movedq3")},2000);
 }
 function moveq4(){
-    dx = 0; dy = -width;
-    console.log("movedq4");
+    setTimeout(function(){dx = 0; dy = -height;
+    console.log("movedq4")},2000);
 }
 
 function ease(){
@@ -54,12 +56,13 @@ function ease(){
     if(abs(ds-s)>.1) s += .2*(ds-s);
 }
 
-
-function zoomIn(){
-    ds = 2;
-}
-
 function zoomOut(){
-    ds = 0.5;
+    setTimeout(function(){ds = 0.35;
+                          dx = -bg.width*.25;dy=-width*.4
+                         },2000);
 }
 
+//
+//function zoomIn(){
+//    ds = 2;
+//}

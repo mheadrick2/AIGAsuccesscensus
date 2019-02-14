@@ -20,7 +20,7 @@ function draw(){
     background(255,255,255);
 //    console.log("drawing..");
     ease();
-    scale(s);
+    scale(s*.85);
     push();
     
     translate(x+bg.width*.5, y+bg.height*.5);
@@ -70,7 +70,7 @@ function ease(){
 
 function zoomOut(){
     setTimeout(function(){ds = 0.40;
-                          dx = 0; dy= 0;;
+                          dx = 100; dy= 0;;
                          },2000);
     
 }

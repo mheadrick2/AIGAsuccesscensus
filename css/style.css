@@ -489,6 +489,7 @@ img{
     font-family: "Font Awesome 5 Free";
     font-size: x-large;
     padding-top:.6em;
+    display:none
 }
 /*
 
@@ -508,6 +509,7 @@ img{
 /*TOOLTIP CSS BELOW THIS POINT ----------------------------------*/
  
         a.tooltip{
+            display:none;
           outline:none; 
           position: absolute;
           left:300px;

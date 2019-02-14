@@ -252,6 +252,14 @@ input[type=checkbox]:checked ~ section.button h3,input[type=checkbox]:checked ~s
     color:#F4FCF5;
 }
 
+.button a{
+    margin-top:3em;
+    margin-bottom:3em;
+    font-size: 2em;
+    color: #765EED;
+}
+
+
 a{
     color:#f4fcf5;
     font-size: 1em;
@@ -259,10 +267,6 @@ a{
     text-decoration:none;
 }
 
-.button a{
-    margin-top:3em;
-    margin-bottom:3em;
-}
 
 .button3{
     font-weight: 500; 
@@ -626,38 +630,47 @@ img{
 
 /*TOOLTIP CSS BELOW THIS POINT ----------------------------------*/
  
-        a.tooltip{
-            display:none;
+        #hov1 {
+        display:none;
           outline:none; 
           position: fixed;
           left:400px;
-          z-index: 3;
-            
+            top:100px;
+          z-index: 1;
           }
         
-        #hov2{
+        #hov2 {
+            
+            display:none;
             outline: none;
-            position: fixed;
+            position: absolute;
             left: 750px;
-            top: 200px;
+            top: 500px;
+            z-index: 1;
         }
-      #hov3{
+      #hov3 {
+           display:none;
             outline: none;
           position: fixed;
             left: 1300px;
             top: 870px;
+          z-index: 1;
         }
       #hov4{
-            outline: none;
+          display:none;
+          outline: none;
           position: fixed;
-            left: 400px;
-            top: 400px;
+          left: 230px;
+          top: 200px;
+          z-index: 1;
         }
       #hov5{
+          display: none;
             outline: none;
-          position: fixed;
-            left: 1300px;
-            top: 200px;
+            position: fixed;
+            left: 720px;
+            top: 170px;
+          z-index: 1;
         }
           
         a.tooltip strong {

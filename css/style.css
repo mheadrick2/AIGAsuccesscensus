@@ -225,8 +225,11 @@ a{
 
 .submitcontain:hover{
     border: solid 4px #FF0000;
+}
 
-
+h4{
+    font-size: .8em;
+    transition: 0.5s ease-in-out all;
 }
 /*submit button style abover^^*/
 .allqs {
@@ -235,8 +238,8 @@ a{
 /*  background-color:#765eed;*/
   color: #F4FCF5;
   border: none;
-  height:5vh;
-  transition: 0.5s;
+  height:9vh;
+  transition: 0.6s ease-out all;
   display: flex;
   min-width: 100vw;
     
@@ -254,7 +257,7 @@ a{
   width: 100%;
 /*     position: fixed; */
     z-index: 2;
-    height: 5vh;
+/*    height: 5vh;*/
     top: 0;
     left: 0;
     background-color: #765eed;
@@ -262,6 +265,8 @@ a{
     transition: 0.5s;
     padding-top: 0em;
     min-width: 100vw;
+    transition: .6s ease-in-out all;
+
     
     
     }
@@ -281,7 +286,7 @@ a{
 
 .questions section{
     border-right: 1px solid white;
-	padding: 2rem;
+/*	padding: 2rem;*/
 	text-align: center;
     flex-direction: column;
 /*    overflow-x: hidden;*/
@@ -295,32 +300,56 @@ a{
    
 .questions h1{
     color:#F4FCF5;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight:600;
     transition: 0.3s;
+    margin-top: .6em;
     margin-bottom: .3em;
+    transition: .6s ease-in-out all;
+    opacity:0;
+    text-transform: uppercase;
 }
 /*question styling*/
 
 .questions h3{
     color:#F4FCF5;
     font-size:1.2rem;
-    font-weight:600;
+    font-weight:500;
+    line-height: 1.4em;
     padding-bottom:0;
+    transition: .6s ease-in-out all;
+    opacity:0;
 }
 
 .questions p{
     color:white;
+    opacity:0;
+    transition: .6s ease-in-out all;
+    font-size: 1.2em;
 }
+
+.allqs:hover h1{
+    opacity: 1;
+}
+
+.allqs:hover h3{
+    opacity: 1;
+}
+
+.allqs:hover p{
+    opacity: 1;
+}
+
+
 
 .options{
     display:grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 39% 39%;
     grid-gap:2%;
 }
 .content{
     text-align: left;
-    margin-left: 2em;
+/*    margin-left: 2em;*/
     font-size: .45em;
     margin-bottom: .5em;
 }

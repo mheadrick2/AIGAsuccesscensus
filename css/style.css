@@ -505,21 +505,31 @@ img{
 /*____________________________________________________*/
 
 /*TOOLTIP CSS BELOW THIS POINT ----------------------------------*/
-
+ 
         a.tooltip{
           outline:none; 
           position: absolute;
-            left:400px;
+          left:300px;
+            
           }
-          
+        
+        #hov2{
+            outline:none; 
+          position: absolute;
+          left:600px;
+        }
+
           
         a.tooltip strong {
-            line-height:20px;
-            font-size:2rem;
+            line-height:25px;
+            font-size:1.2rem;
+            font-weight: 600;
+            
           }
         a.tooltip desc  {
             font-size:.7rem;
             transition: .5s all;
+            padding: 2rem 0rem;
           }
           
         a.tooltip:hover 
@@ -530,12 +540,13 @@ img{
           
 
         a.tooltip span {
+            
+            text-align: left;
+            font-size: .6rem;
             z-index:10;
             display:none; 
             padding:14px 20px;
-            margin-top:3%; 
-            margin-left:-160px;
-            width:300px; 
+            width:200px; 
             line-height:1.1em;
             opacity: 0;
             position: absolute;
@@ -566,6 +577,7 @@ img{
         a.tooltip span
         {
             border-radius:15px; 
+            padding: .5rem 1rem 2.4rem 1rem;
             
 /*            box-shadow: 0px 0px 8px 4px #666;*/
             /*opacity: 0.8;*/

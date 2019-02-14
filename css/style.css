@@ -401,7 +401,7 @@ img{
 .modal-content {
   opacity: 1;
   background-color: #F4FCF5;
-  margin-right: 8%;
+  margin-right: 3%;
   padding: 4em 3em;
   width: 25%;
   transition: all 0.5s ease-in-out;
@@ -411,6 +411,7 @@ img{
 .modal-content p{
     font-weight:600;
     font-size: 1.2em;
+    line-height: 1.35em;
  
 }
 
@@ -421,7 +422,7 @@ img{
   font-size: 28px;
   font-weight: bold;
   top: 16%;
-    right: 37.5%;
+    right: 32.2%;
     position: fixed;
 }
 
@@ -438,7 +439,7 @@ img{
   font-size: 28px;
   font-weight: bold;
   top: 16%;
-    right: 37.5%;
+    right: 32.2%;
     position: fixed;
 }
 
@@ -475,13 +476,13 @@ img{
     z-index: ;
     box-sizing: border-box;
     border-radius: 50%;
-    border: solid 2.5px #FF0000;
+    border: solid 2.5px #765eed;
     width: 4.5vw;
     height:4.5vw;
     text-align: center;
     transition: .2s ease-in-out all;
     transform-origin: center;
-    color:#FF0000;
+    color:#765eed;
     position: absolute;
     bottom: 20%;
     right: 35%;
@@ -505,21 +506,31 @@ img{
 /*____________________________________________________*/
 
 /*TOOLTIP CSS BELOW THIS POINT ----------------------------------*/
-
+ 
         a.tooltip{
           outline:none; 
           position: absolute;
-            left:400px;
+          left:300px;
+            
           }
-          
+        
+        #hov2{
+            outline:none; 
+          position: absolute;
+          left:600px;
+        }
+
           
         a.tooltip strong {
-            line-height:20px;
-            font-size:2rem;
+            line-height:25px;
+            font-size:1.2rem;
+            font-weight: 600;
+            
           }
         a.tooltip desc  {
             font-size:.7rem;
             transition: .5s all;
+            padding: 2rem 0rem;
           }
           
         a.tooltip:hover 
@@ -530,12 +541,13 @@ img{
           
 
         a.tooltip span {
+            
+            text-align: left;
+            font-size: .6rem;
             z-index:10;
             display:none; 
             padding:14px 20px;
-            margin-top:3%; 
-            margin-left:-160px;
-            width:300px; 
+            width:200px; 
             line-height:1.1em;
             opacity: 0;
             position: absolute;
@@ -547,7 +559,7 @@ img{
 /*            position:absolute; */
             color:#765eed;
             line-height: 1.3em;
-            background: #ccccff;
+            background: white;
             opacity: 1;
 
             
@@ -566,6 +578,7 @@ img{
         a.tooltip span
         {
             border-radius:15px; 
+            padding: .5rem 1rem 2.4rem 1rem;
             
 /*            box-shadow: 0px 0px 8px 4px #666;*/
             /*opacity: 0.8;*/

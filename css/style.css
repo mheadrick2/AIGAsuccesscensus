@@ -232,7 +232,21 @@ a{
     width: 8%;
     height:5%; 
     border: solid 4px #765eed;
+    text-align: center;
 }
+
+.submitcontain{
+    background: white;
+    display: inline-block;
+    margin: 2em 0em;
+    padding:1em;
+    width: 8%;
+    height:5%; 
+    border: solid 4px #765eed;
+    color:black;
+    text-align: center;
+}
+
 
 .submitcontain:hover{
     border: solid 4px #FF0000;
@@ -324,7 +338,7 @@ h4{
 
 .questions h3{
     color:#F4FCF5;
-    font-size:1.2rem;
+    font-size:1rem;
     font-weight:500;
     line-height: 1.4em;
     padding-bottom:0;
@@ -336,7 +350,7 @@ h4{
     color:white;
     opacity:0;
     transition: .6s ease-in-out all;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .allqs:hover h1{
@@ -355,7 +369,7 @@ h4{
 
 .options{
     display:grid;
-    grid-template-columns: 39% 39%;
+    grid-template-columns: 49% 49%;
     grid-gap:2%;
 }
 .content{
@@ -551,16 +565,16 @@ img{
         a.tooltip{
             display:none;
           outline:none; 
-          position: absolute;
-          left:300px;
+          position: fixed;
+          left:400px;
             z-index: 1;
             
           }
         
         #hov2{
-            outline:none; 
-          position: absolute;
-          left:600px;
+            outline: none;
+            left: 750px;
+            top: 200px;
         }
 
           
@@ -611,8 +625,8 @@ img{
         }
         
           img{
-              width:25px;
-              height:25px;
+              width:45px;
+              height:45px;
 
           }
 

@@ -432,17 +432,20 @@ fa, .far, .fas {
           
         a.tooltip strong {
             line-height:20px;
+            font-size:2rem;
           }
         a.tooltip desc  {
-            font-size:.7em;
+            font-size:.7rem;
             transition: .5s all;
           }
           
         a.tooltip:hover 
-          {text-decoration:none;
+          {
+              text-decoration:none;
             
           } 
           
+
         a.tooltip span {
             z-index:10;
             display:none; 

@@ -83,6 +83,13 @@ header{
   animation: slide 20s linear infinite;
 }
 
+.static-background {
+/*  overflow:hidden;*/
+  background: url("../img/Dot_pattern.png");
+    height:550px;
+}
+
+
 @keyframes slide{
   0%{
     transform: translate3d(0, 0, 0);

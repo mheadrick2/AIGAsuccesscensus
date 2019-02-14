@@ -565,7 +565,7 @@ img{
         a.tooltip{
             display:none;
           outline:none; 
-          position: absolute;
+          position: fixed;
           left:400px;
             z-index: 1;
             
@@ -573,7 +573,6 @@ img{
         
         #hov2{
             outline: none;
-            position: fixed;
             left: 750px;
             top: 200px;
         }

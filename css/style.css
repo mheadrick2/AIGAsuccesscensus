@@ -234,7 +234,9 @@ input[type=checkbox] {
     visibility: hidden;
 }
 input[type=checkbox]:checked ~ div.content h3 span{
-  background: #FF0000;
+  background: #50ff9f;
+    color: #765eed;
+
 } 
 input[type=checkbox]:checked ~ section.button{
     background-color:#765EED;
@@ -260,19 +262,20 @@ a{
 .button3{
     font-weight: 500; 
     text-align: center;
-    color:#765EED;
+    color:#f4fcf5;
 }
 
 .submitcontain{
-    background: white;
+/*    background: white;*/
     display: inline-block;
     margin: 2em 0em;
     padding:.6em;
     width: 8%;
     height:5%; 
-    border: solid 4px #765eed;
+    border: solid 4px #f4fcf5;
     text-align: center;
     border-radius:10px;
+    text-decoration-color: #50ff9f;
 }
 
 
@@ -290,10 +293,20 @@ a{
 }
 */
 
-
-.submitcontain:hover{
-    border: solid 4px #FF0000;
+.submitcontain:hover {
+    /*    border: solid 4px #50ff9f;*/
+    background: #f4fcf5;
 }
+
+.submitcontain:hover div{
+    color: #765eed;
+}
+
+/*
+.button3:hover{
+    color: #765eed;
+}
+*/
 
 h4{
     font-size: .8em;

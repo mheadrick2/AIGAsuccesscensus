@@ -70,10 +70,14 @@ function ease(){
 
 function zoomOut(){
     setTimeout(function(){ds = 0.40;
-                          dx = 0; dy= 0;
+                          dx = 0; dy= 0;;
                          },2000);
+    
 }
 
+function save(){
+    setTimeout(function(){saveCanvas("map",'jpg')},3000);
+}
 //
 //function zoomIn(){
 //    ds = 2;

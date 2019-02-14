@@ -489,6 +489,7 @@ function type1q4() {
     openNav();
     
     zoomOut();
+    save();
 }
 
 //****************************SALARY AND STABILITY*****************************

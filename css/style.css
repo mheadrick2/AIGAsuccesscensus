@@ -500,11 +500,12 @@ img{
 .modal-content {
   opacity: 1;
   background-color: #F4FCF5;
-  margin-right: 3%;
+  margin-left: 30%;
+  margin-top: 10%;
   padding: 4em 3em;
-  width: 25%;
+  width: 40%;
   transition: all 0.5s ease-in-out;
-  float: right;
+  
 }
 
 .modal-content p{
@@ -520,8 +521,8 @@ img{
   float: right;
   font-size: 28px;
   font-weight: bold;
-  top: 16%;
-    right: 32.2%;
+    top: 34%;
+    left: 31.5%;
     position: fixed;
 }
 
@@ -537,8 +538,8 @@ img{
   float: right;
   font-size: 28px;
   font-weight: bold;
-  top: 16%;
-    right: 32.2%;
+  top: 34%;
+    left: 31.5%;
     position: fixed;
 }
 
@@ -612,12 +613,13 @@ img{
           outline:none; 
           position: fixed;
           left:400px;
-            z-index: 1;
+          z-index: 1;
             
           }
         
         #hov2{
             outline: none;
+            position: fixed;
             left: 750px;
             top: 200px;
         }

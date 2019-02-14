@@ -613,7 +613,7 @@ img{
           outline:none; 
           position: fixed;
           left:400px;
-          z-index: 1;
+          z-index: 3;
             
           }
         
@@ -625,17 +625,20 @@ img{
         }
       #hov3{
             outline: none;
-            left: 750px;
-            top: 200px;
+          position: fixed;
+            left: 1300px;
+            top: 870px;
         }
       #hov4{
             outline: none;
-            left: 750px;
-            top: 200px;
+          position: fixed;
+            left: 400px;
+            top: 400px;
         }
       #hov5{
             outline: none;
-            left: 750px;
+          position: fixed;
+            left: 1300px;
             top: 200px;
         }
           

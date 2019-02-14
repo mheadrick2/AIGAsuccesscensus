@@ -248,8 +248,8 @@ input[type=checkbox]:checked ~ section.button h3,input[type=checkbox]:checked ~s
 }
 
 a{
-    color:#765EED;
-    font-size: 2em;
+    color:#f4fcf5;
+    font-size: 1em;
     text-align:right;
     text-decoration:none;
 }

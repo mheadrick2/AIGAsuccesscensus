@@ -70,11 +70,12 @@ window.onload = function() {
        //between the <a ...> </a> tags with the value of splitText
 var declaration = word1+" and "+word2+".";
 document.getElementById("myChoice").innerHTML = declaration;
-declaration.classList.add()
     }
-    if (typeindex == 1){
+    if (typeindex == "1"){
+        console.log(typeindex);
         document.getElementById("direct").href="main.html";
-    } else{
+    } else {
+        console.log(typeindex);
         document.getElementById("direct").href="main"+typeindex+".html";
         
     }

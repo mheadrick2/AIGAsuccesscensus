@@ -15,12 +15,14 @@ html{
 
 
 h1{
-    width:75%;
-    font-size:5em;
+    width:60%;
+    font-size:5.5em;
     font-weight:600;
     margin-bottom:0.6em;
     color:#FF0000;
     line-height:1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 h1 span{
@@ -49,6 +51,10 @@ p{
     color:#FF0000;
 }
 
+#firstpage h1{
+    line-height: 1.2em;
+}
+
 
 body{
 }
@@ -70,8 +76,10 @@ header{
     color: #FF0000;
     border: 4px solid #FF0000; 
     float:center;
-    text-align:center;   
+    text-align:center;
+    border-radius:10px;
 }
+
 .sidebutton{
     padding:3em;
     color: #FF0000;
@@ -82,25 +90,30 @@ form{
     display:grid;
     grid-template-columns: 49% 49%;
     grid-gap:2%;
+    text-decoration: none;
 }
 
 #success{
     padding:3.5em 2em;
     margin-bottom: 1em;
+    border-radius:10px;
 }
 
 .button:hover{
     background-color:#FF0000;
     color:#F4FCF5; 
     transition: opacity 0.1s ease-in;
+    text-decoration: none;
 }
 
 .button:hover p{
     color:#F4FCF5;
+    text-decoration: none;
 }
 
 .button:hover h3{
     color:#F4FCF5;
+    text-decoration: none;
 }
 
 input[type=checkbox] {
@@ -410,40 +423,61 @@ fa, .far, .fas {
 
 /*TOOLTIP CSS BELOW THIS POINT ----------------------------------*/
 
-    a.tooltip 
-          {outline:none; 
-          margin-left: 30%;}
-/*Change above to effect placemenet*/
+        a.tooltip{
+          outline:none; 
+          position: absolute;
+            left:400px;
+          }
           
-    a.tooltip strong 
-          {line-height:30px;}
-    a.tooltip:hover 
-          {text-decoration:none;} 
-    a.tooltip span {
-            z-index:10;display:none; padding:14px 20px;
-            margin-top:60px; margin-left:-160px;
-            width:300px; line-height:16px;
+          
+        a.tooltip strong {
+            line-height:20px;
+          }
+        a.tooltip desc  {
+            font-size:.7em;
+            transition: .5s all;
+          }
+          
+        a.tooltip:hover 
+          {text-decoration:none;
+            
+          } 
+          
+        a.tooltip span {
+            z-index:10;
+            display:none; 
+            padding:14px 20px;
+            margin-top:3%; 
+            margin-left:-160px;
+            width:300px; 
+            line-height:1.1em;
+            opacity: 0;
+            position: absolute;
+            transition: .5s ease-in-out all;
         }
-    a.tooltip:hover span{
+          
+        a.tooltip:hover span{
             display:inline; 
-            position:absolute; 
-            border:2px solid #FFF;  
-            color:#EEE;
-            background:#333; url(http://www.menucool.com/tooltip/cssttp/css-tooltip-gradient-bg.png) repeat-x 0 0;
+/*            position:absolute; */
+            color:#765eed;
+            line-height: 1.3em;
+            background: #ccccff;
+            opacity: 1;
+
+            
+            
+/*            #b4bcdb*/
         }
-/*change above to effect message box styling*/
         
-     img{
+          img{
               width:25px;
               height:25px;
+
           }
-/*change above to effect hover spot*/
 
-    .callout {
-        z-index:20;position:absolute;border:0;top:-14px;left:120px;}
-
+    
         /*CSS3 extras*/
-    a.tooltip span
+        a.tooltip span
         {
             border-radius:15px; 
             

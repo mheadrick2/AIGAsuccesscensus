@@ -633,6 +633,7 @@ img{
           outline:none; 
           position: fixed;
           left:400px;
+            top:100px
           z-index: 3;
             
           }

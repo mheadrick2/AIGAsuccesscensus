@@ -327,7 +327,7 @@ img{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -413,7 +413,7 @@ img{
 
 #myBtn, #myBtn2{
 /*    padding: 15px 0px;*/
-    z-index: 1;
+    z-index: ;
     box-sizing: border-box;
     border-radius: 50%;
     border: solid 2.5px #FF0000;

@@ -14,7 +14,7 @@
     <script src="sketch.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+  
    </head>
     
    <body>
@@ -271,43 +271,64 @@
                 <img id="" src="">
             </section >
         </div>
-        
-        </div>
-<!--THIS IS THE AWESOME TOOLTIP MADDIE MADE-->
-       <a href="#" class="tooltip">
-<!--           add class="tooltip" to a-->
-            <img src="transpahover.gif" />
-            <span>
-                <strong>Success Type 1</strong><br />
-                <desc>Answer 3</desc><br /><br />
-                This answer represents the top choice for your success group. It is represented by the top object in this question group, a skyscraper. 
-            </span>
-        </a>
-        
-<!--BELOW IS THE MODAL STUFF BOTTOM BUTTONS!!***************-->
-       
-        <div id="btnContainer">
-        <div id="myBtn"><i class="fas fa-info"></i>
+       </div>
+
+<!-- Trigger/Open The Modal -->
+    <div id="btnContainer">
+    <div id="myBtn"><i class="fas fa-info"></i>
+    </div></div>
+        <div id="floatModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This map represents the landscape of a designer. By choosing a measure of success at the beginning of the experience, you chose to see how your answers compared with those designers that fit that measure of success. How do you preferences, practices, and beliefs compare with the successful designer you aspire to be?</p>
+          </div>
+
+    </div>
+
+    <div id="btnContainer2">
+    <div id="myBtn2"><i class="fas fa-arrow-down"></i>
         </div></div>
-            <div id="floatModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>This map represents the landscape of a designer. By choosing a measure of success at the beginning of the experience, you chose to see how your answers compared with those designers that fit that measure of success. How do you preferences, practices, and beliefs compare with the successful designer you aspire to be?</p>
-              </div>
-        </div>
+        <div id="floatModal2" class="modal">
+          <div class="modal-content">
+            <span class="close2">&times;</span>
+            <p>If your download does not begin momentarily, please click the link below to manually begin download.</p>
+          </div>
 
-        <div id="btnContainer2">
-        <div id="myBtn2"><i class="fas fa-arrow-down"></i>
-            </div></div>
-            <div id="floatModal2" class="modal">
-              <div class="modal-content">
-                <span class="close2">&times;</span>
-                <p>If your download does not begin momentarily, please click the link below to manually begin download.</p>
-              </div>
+    </div>
 
-        </div>
+    <script>
+        var modal = document.getElementById('floatModal');
+        var modal2 = document.getElementById('floatModal2');
+        var modcont = document.getElementsByClassName("modal-content")
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        // When the user clicks the button, open the modal 
+        btn.onclick = function(){
+          modal.style.display = "block";
+        }
 
-        
+         btn2.onclick = function(){
+            modal2.style.display="block";
+
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function()  {
+          modal.style.display = "none";
+        }
+
+        span2.onclick = function()  {
+          modal2.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+   
         
    </body>
    

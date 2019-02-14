@@ -68,8 +68,10 @@ window.onload = function() {
     if (type != []){
        //when the document is finished loading, replace everything
        //between the <a ...> </a> tags with the value of splitText
-var declaration = "I define success in design as " + word1+" and "+word2+".";
-document.getElementById("myChoice").innerHTML = declaration;}
+var declaration = word1+" and "+word2+".";
+document.getElementById("myChoice").innerHTML = declaration;
+declaration.classList.add()
+    }
     if (typeindex == 1){
         document.getElementById("direct").href="main.html";
     } else{

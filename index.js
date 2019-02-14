@@ -223,7 +223,6 @@ function type1q1() {
     closeNav();
     
     waitscroll();
-    
 }
 
 function type1q2() {
@@ -345,7 +344,7 @@ function type1q2() {
     
     closeNav();
     
-     waitscroll2();
+    waitscroll2();
 }
 
 function type1q3() {

@@ -64,13 +64,19 @@ window.onload = function() {
     var word1 = type.split(",")[0];
     var word2 = type.split(",")[1]
     var typeindex = localStorage.getItem("typeindex");
-    
     console.log(type)
     if (type != []){
        //when the document is finished loading, replace everything
        //between the <a ...> </a> tags with the value of splitText
 var declaration = "I define success in design as " + word1+" and "+word2+".";
 document.getElementById("myChoice").innerHTML = declaration;}
+    if (typeindex == 1){
+        document.getElementById("direct").href="main.html";
+    } else{
+        document.getElementById("direct").href="main"+typeindex+".html";
+        
+    }
+    
 } 
 
 

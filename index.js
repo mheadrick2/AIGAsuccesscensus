@@ -112,9 +112,10 @@ var locations4 = [];
 // TRING SIDE NAV  
 function openNav() {
   document.getElementById("plswork").setAttribute("style","height:55vh");
-    document.getElementById("plswork2").setAttribute("style","height:70vh");
+    document.getElementById("plswork2").setAttribute("style","height:60vh");
     
-    document.getElementById("plswork3").setAttribute("style","height:99vh");
+    document.getElementById("plswork3").setAttribute("style","height:100vh");
+    
     document.getElementById("plswork4").setAttribute("style","height:65vh");
 //  document.getElementsByClassName("questions").setAttribute("style","height:70vh");
 }

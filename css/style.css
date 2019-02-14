@@ -69,8 +69,13 @@ body{
     padding:0;
 }
 
+#statement{
+    display:inline;
+}
 #myChoice{
-    margin-top:7%;
+/*    margin-top:7%;*/
+    text-decoration:underline;
+    display:inline;
 
 }
 

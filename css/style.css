@@ -636,7 +636,21 @@ img{
             left: 750px;
             top: 200px;
         }
-
+      #hov3{
+            outline: none;
+            left: 750px;
+            top: 200px;
+        }
+      #hov4{
+            outline: none;
+            left: 750px;
+            top: 200px;
+        }
+      #hov5{
+            outline: none;
+            left: 750px;
+            top: 200px;
+        }
           
         a.tooltip strong {
             line-height:25px;

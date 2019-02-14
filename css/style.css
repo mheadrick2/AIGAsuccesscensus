@@ -476,13 +476,13 @@ img{
     z-index: ;
     box-sizing: border-box;
     border-radius: 50%;
-    border: solid 2.5px #FF0000;
+    border: solid 2.5px #765eed;
     width: 4.5vw;
     height:4.5vw;
     text-align: center;
     transition: .2s ease-in-out all;
     transform-origin: center;
-    color:#FF0000;
+    color:#765eed;
     position: absolute;
     bottom: 20%;
     right: 35%;

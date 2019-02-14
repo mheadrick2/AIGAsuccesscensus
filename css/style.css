@@ -272,8 +272,10 @@ a{
     height:5%; 
     border: solid 4px #765eed;
     text-align: center;
+    border-radius:10px;
 }
 
+/*
 .submitcontain{
     background: white;
     display: inline-block;
@@ -285,6 +287,7 @@ a{
     color:black;
     text-align: center;
 }
+*/
 
 
 .submitcontain:hover{
@@ -306,7 +309,7 @@ h4{
   transition: 0.6s ease-out all;
   display: flex;
   min-width: 100vw;
-    
+    overflow-y: hidden;
   overflow-x:hidden;
 }
 /*Above is a contianer for all questions and helps start foldbale question section*/
@@ -337,6 +340,7 @@ h4{
 /* questions class unfolds when you click #allqs*/
 .questions a:hover {
   color: #F4FCF5;
+        
 }
 
 .questions .closebtn {
@@ -353,6 +357,7 @@ h4{
 /*	padding: 2rem;*/
 	text-align: center;
     flex-direction: column;
+    
 /*    overflow-x: hidden;*/
 }
 

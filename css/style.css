@@ -405,13 +405,13 @@ img{
     cursor: pointer;
 }
 
-#myBtn:hover, #myBtn2:hover{
+#infobtn:hover, #downloadbtn:hover{
     
     transform:scale(1.1);
     transform-origin: center;
 }
 
-#myBtn, #myBtn2{
+#infobtn, #downloadbtn{
 /*    padding: 15px 0px;*/
     z-index: ;
     box-sizing: border-box;

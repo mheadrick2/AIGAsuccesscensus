@@ -242,8 +242,8 @@ input[type=checkbox] {
     visibility: hidden;
 }
 input[type=checkbox]:checked ~ div.content h3 span{
-  background: #50ff9f;
-    color: #556BE2;
+    background: #90A0F2;
+    color: #F4FCF5;
 
 } 
 input[type=checkbox]:checked ~ section.button{
@@ -266,26 +266,33 @@ a{
     color: #556BE2;
     font-size: 2em;
     margin-top:3em;
-    margin-bottom:3em;
+/*    margin-bottom:3em;*/
 }
 
 .button3{
-    font-weight: 500; 
+    font-weight: 400; 
+    vertical-align: bottom;
     text-align: center;
-    color:#f4fcf5;
+    color:#556BE2;
 }
 
 .submitcontain{
 /*    background: white;*/
+    grid-column: 3;
+    color: #556BE2;
+    text-transform: lowercase;
     display: inline-block;
+    vertical-align: bottom;
     margin: 2em 0em;
     padding:.6em;
     width: 8%;
     height:5%; 
-    border: solid 4px #f4fcf5;
+    background: #f4fcf5;
+/*    border: solid 4px #f4fcf5;*/
     text-align: center;
     border-radius:10px;
-    text-decoration-color: #50ff9f;
+/*    text-decoration-color: #50ff9f;*/
+    
 }
 
 
@@ -444,9 +451,11 @@ label{
     transition: .3s ease-in-out;
 }
 
+/*
 label:hover{
     text-decoration: underline;      
 }
+*/
 
 /*
 #answer5{

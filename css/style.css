@@ -89,6 +89,13 @@ header{
     padding:3em;
 }
 
+.vidcontainer{
+    position:absolute;
+    float:center;
+    z-index:5;
+}
+
+
 .container {
     overflow:hidden;
     z-index:1;

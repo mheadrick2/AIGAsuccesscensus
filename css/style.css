@@ -128,7 +128,7 @@ header{
 .button{
     padding:0.4em 0.4em;
     color: #556BE2;
-    border: 2px solid #765EED; 
+    border: 2px solid #556BE2; 
     text-align:center;
     border-radius:10px;
     z-index:3;
@@ -138,7 +138,7 @@ header{
 #confirmation .button{
     padding:0.6em 0.6em;
     color: #556BE2;
-    border: 2px solid #765EED; 
+    border: 2px solid #556BE2; 
     text-align:center;
     border-radius:10px;
     z-index:3;
@@ -348,7 +348,7 @@ h4{
 /*    height: 5vh;*/
     top: 0;
     left: 0;
-    background-color: #765eed;
+    background-color: #556BE2;
     overflow: hidden;
     transition: 0.5s;
     padding-top: 0em;
@@ -699,7 +699,7 @@ img{
         a.tooltip:hover span{
             display:inline; 
 /*            position:absolute; */
-            color:#765eed;
+            color:#556BE2;
             line-height: 1.3em;
             background: white;
             opacity: 1;

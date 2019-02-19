@@ -188,12 +188,7 @@ header{
 }
 */
 
-form{
-    display:grid;
-    grid-template-columns: 49% 49%;
-    grid-gap:2%;
-    text-decoration: none;
-}
+
 #successform{
 /*    padding-left:5%;*/
     padding-right:5%;
@@ -247,8 +242,8 @@ input[type=checkbox] {
     visibility: hidden;
 }
 input[type=checkbox]:checked ~ div.content h3 span{
-  background: #50ff9f;
-    color: #556BE2;
+    background: #90A0F2;
+    color: #F4FCF5;
 
 } 
 input[type=checkbox]:checked ~ section.button{
@@ -271,42 +266,35 @@ a{
     color: #556BE2;
     font-size: 2em;
     margin-top:3em;
-    margin-bottom:3em;
+/*    margin-bottom:3em;*/
 }
 
 .button3{
-    font-weight: 500; 
+    font-weight: 400; 
+    vertical-align: bottom;
     text-align: center;
-    color:#f4fcf5;
+    color:#556BE2;
 }
 
 .submitcontain{
 /*    background: white;*/
+    grid-column: 3;
+    color: #556BE2;
+    text-transform: lowercase;
     display: inline-block;
+    vertical-align: bottom;
     margin: 2em 0em;
     padding:.6em;
     width: 8%;
     height:5%; 
-    border: solid 4px #f4fcf5;
+    background: #f4fcf5;
+/*    border: solid 4px #f4fcf5;*/
     text-align: center;
     border-radius:10px;
-    text-decoration-color: #50ff9f;
+/*    text-decoration-color: #50ff9f;*/
+    
 }
 
-
-/*
-.submitcontain{
-    background: white;
-    display: inline-block;
-    margin: 2em 0em;
-    padding:1em;
-    width: 8%;
-    height:5%; 
-    border: solid 4px #765eed;
-    color:black;
-    text-align: center;
-}
-*/
 
 .submitcontain:hover {
     /*    border: solid 4px #50ff9f;*/
@@ -317,11 +305,6 @@ a{
     color: #556BE2;
 }
 
-/*
-.button3:hover{
-    color: #765eed;
-}
-*/
 
 h4{
     font-size: .8em;
@@ -345,7 +328,14 @@ h4{
 
 .allqs:hover {
 /*  background-color:#444;*/
-  height:75vh;
+  height:100vh;
+}
+
+form{
+    display:grid;
+    grid-template-columns: 45% 10% 45%;
+    text-decoration: none;
+    margin-top: 2.5rem;
 }
 
 
@@ -392,31 +382,42 @@ h4{
 
 .questions form{
     text-align: left;
-    display: block;
-    padding:2%;
+    margin-left: 4em;
+    list-style-type: decimal-leading-zero;
 }
    
 .questions h1{
     color:#F4FCF5;
-    font-size: 1.5rem;
-    font-weight:600;
+    font-size: 2.5rem;
+    font-weight:700;
+    grid-column: 1;
     transition: 0.3s;
-    margin-top: .6em;
+/*    margin-top: .6em;*/
     margin-bottom: .3em;
     transition: .6s ease-in-out all;
     opacity:0;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 }
 /*question styling*/
 
 .questions h3{
     color:#F4FCF5;
     font-size:1rem;
-    font-weight:500;
+    font-weight:700;
     line-height: 1.4em;
     padding-bottom:0;
     transition: .6s ease-in-out all;
     opacity:0;
+}
+
+.questions h4{
+    font-size: 1.15rem;
+    font-weight: 300;
+    grid-column: 1;
+    margin-bottom: 1em;
+}
+.options {
+    grid-column: 3;
 }
 
 .questions p{
@@ -439,12 +440,6 @@ h4{
 }
 
 
-
-.options{
-    display:grid;
-    grid-template-columns: 49% 49%;
-    grid-gap:2%;
-}
 .content{
     text-align: left;
 /*    margin-left: 2em;*/
@@ -456,9 +451,11 @@ label{
     transition: .3s ease-in-out;
 }
 
+/*
 label:hover{
     text-decoration: underline;      
 }
+*/
 
 /*
 #answer5{
@@ -735,4 +732,87 @@ img{
         }
 
   
-        
+/*MORE INFO PAGE BELOW ---------------------------------------------*/
+
+        #moreinfo{
+        }
+
+        #moreinfo h2{
+            font-weight: 500;
+            font-size: 28px;
+            color: #556BE2;
+        }
+
+        #moreinfo section{
+            padding-left:3em;
+            padding-top: 6em;
+
+        }
+
+        #moreinfo h4{
+            font-family: le-monde-livre-std, serif;
+            color:darkslategray;
+            font-size: 28px;
+            width:70%;
+            line-height: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        #moreinfo h3{
+            font-size: 18px;
+        }
+
+        #moreinfo ul li{
+            display: inline-block;
+            font-size: 12px;
+            width:9%;
+            margin-top: 3em;
+            padding-right: 3%;
+        }
+
+        .circ{
+            height: 60px;
+            width: 60px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin:.8em;
+        }
+
+
+        #moreinfo section:nth-child(1) h1, h2, p{
+            color:#F4FCF5;
+        }
+
+        #moreinfo section:nth-child(1){
+            height:100vh;
+            background: #556BE2;
+            box-sizing: border-box;
+
+        }
+
+        #moreinfo section:nth-child(1) p{
+            font-family: le-monde-livre-std, serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 1.2em;
+            width:70%;
+        }
+
+        #moreinfo section:nth-child(1) h2{
+            line-height: 1.2em;
+            padding-bottom: .5em;
+            color:#F4FCF5;
+        }
+
+        #moreinfo section:nth-child(2) img{
+            width: 34%;
+            height: auto;
+            padding:5% 7%;
+        }
+
+        #key img{
+            width:75%;
+            height: auto;
+            margin-left: 9%;
+            padding: 1em 0em;
+        }

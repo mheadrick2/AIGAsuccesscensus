@@ -3,7 +3,7 @@
 
 html{
     scroll-behavior: smooth;
-    font-family: urw-din, 'Poppins', sans-serif;
+    font-family: nimbus-sans, sans-serif;
     background-color:#F4FCF5;
 /*
     overflow-x:hidden;
@@ -24,7 +24,7 @@ h1{
     font-size:5.5rem;
     font-weight:600;
     margin-bottom:0.6rem;
-    color:#765EED;
+    color:#556BE2;
     line-height:1.3em;
     letter-spacing: 1.2px;
 }
@@ -38,7 +38,7 @@ h2{
     font-size:2rem;
     font-weight:600;
     line-height:2.4rem;
-    color:#765EED; 
+    color:#556BE2; 
 }
 
 #firstpage h2{
@@ -51,14 +51,14 @@ h3{
     font-size:1.8rem;
     font-weight:600;
 /*    text-transform: capitalize;*/
-    color:#765EED;
+    color:#556BE2;
     padding-bottom: .3rem
 }
 p{
     font-size:1.2rem;
     font-weight:400;
     line-height: 1.5rem;
-    color:#765EED;
+    color:#556BE2;
 }
 
 
@@ -127,8 +127,8 @@ header{
 /*button*/
 .button{
     padding:0.4em 0.4em;
-    color: #765EED;
-    border: 2px solid #765EED; 
+    color: #556BE2;
+    border: 2px solid #556BE2; 
     text-align:center;
     border-radius:10px;
     z-index:3;
@@ -137,8 +137,8 @@ header{
 
 #confirmation .button{
     padding:0.6em 0.6em;
-    color: #765EED;
-    border: 2px solid #765EED; 
+    color: #556BE2;
+    border: 2px solid #556BE2; 
     text-align:center;
     border-radius:10px;
     z-index:3;
@@ -166,7 +166,7 @@ header{
 
 .sidebutton{
     padding:1.5em 3em 3em 3em;
-    color: #765EED;
+    color: #556BE2;
     float:center;
     text-align:center;
     
@@ -212,7 +212,7 @@ form{
 }
 
 .button:hover{
-    background-color:#765EED;
+    background-color:#556BE2;
     color:#F4FCF5; 
     transition: opacity 0.1s ease-in;
     text-decoration: none;
@@ -240,11 +240,11 @@ input[type=checkbox] {
 }
 input[type=checkbox]:checked ~ div.content h3 span{
   background: #50ff9f;
-    color: #765eed;
+    color: #556BE2;
 
 } 
 input[type=checkbox]:checked ~ section.button{
-    background-color:#765EED;
+    background-color:#556BE2;
     transition: opacity 0.1s ease-in;
 }
 
@@ -260,7 +260,7 @@ a{
 }
 
 .button a{
-    color: #765EED;
+    color: #556BE2;
     font-size: 2em;
     margin-top:3em;
     margin-bottom:3em;
@@ -306,7 +306,7 @@ a{
 }
 
 .submitcontain:hover div{
-    color: #765eed;
+    color: #556BE2;
 }
 
 /*
@@ -348,7 +348,7 @@ h4{
 /*    height: 5vh;*/
     top: 0;
     left: 0;
-    background-color: #765eed;
+    background-color: #556BE2;
     overflow: hidden;
     transition: 0.5s;
     padding-top: 0em;
@@ -596,13 +596,13 @@ img{
     z-index: ;
     box-sizing: border-box;
     border-radius: 50%;
-    border: solid 2.5px #765eed;
+    border: solid 2.5px #556BE2;
     width: 4.5vw;
     height:4.5vw;
     text-align: center;
     transition: .2s ease-in-out all;
     transform-origin: center;
-    color:#765eed;
+    color:#556BE2;
     position: absolute;
     bottom: 20%;
     right: 35%;
@@ -699,7 +699,7 @@ img{
         a.tooltip:hover span{
             display:inline; 
 /*            position:absolute; */
-            color:#765eed;
+            color:#556BE2;
             line-height: 1.3em;
             background: white;
             opacity: 1;

@@ -299,6 +299,7 @@ a{
 .submitcontain{
 /*    background: white;*/
     display: grid;
+    grid-template-columns: 45% 10% 45%;
     grid-column: 3;
     color: #556BE2;
     text-transform: lowercase;
@@ -404,6 +405,7 @@ form{
     margin-left: 3em;
     margin-right: 3em;
     list-style-type: decimal-leading-zero;
+    cursor: default;
 }
    
 .questions h1{
@@ -428,6 +430,16 @@ form{
     padding-bottom:0;
     transition: .6s ease-in-out all;
     opacity:0;
+}
+
+.questions h3:hover {
+    cursor: pointer;
+/*
+    padding-bottom: 2px;
+    border-bottom: 1px solid #90A0F2;
+*/
+    display: inline;
+    background-image: linear-gradient(#556BE2 50%, #90A0F2 60%);
 }
 
 .questions h4{

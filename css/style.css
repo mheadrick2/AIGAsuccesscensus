@@ -218,8 +218,8 @@ header{
     grid-column: 1;
 }
 
-#successform  {
-    grid-column: 1;
+#successform  label{
+    grid-column: 3;
 }
 
 #success{

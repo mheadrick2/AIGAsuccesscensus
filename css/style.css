@@ -337,7 +337,7 @@ form{
     display:grid;
     grid-template-columns: 45% 10% 45%;
     text-decoration: none;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 

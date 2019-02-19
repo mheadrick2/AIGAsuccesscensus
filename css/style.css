@@ -97,7 +97,7 @@ header{
 
 .sliding-background {
     overflow:hidden;
-  background: url("../img/firstpagebg2.png") repeat-x;
+  background: url("../img/firstpagebg3.png") repeat-x;
   height: 1040px;
   width: 5076px;
   animation: slide 20s linear infinite;

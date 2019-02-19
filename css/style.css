@@ -21,6 +21,7 @@ main {
 
 h1{
 /*    width:60%;*/
+    font-family: le-monde-livre-std, serif;
     font-size:5.5rem;
     font-weight:600;
     margin-bottom:0.6rem;

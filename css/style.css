@@ -306,7 +306,7 @@ a{
 }
 
 .submitcontain:hover div{
-    color: #765eed;
+    color: #556BE2;
 }
 
 /*
@@ -596,7 +596,7 @@ img{
     z-index: ;
     box-sizing: border-box;
     border-radius: 50%;
-    border: solid 2.5px #765eed;
+    border: solid 2.5px #556BE2;
     width: 4.5vw;
     height:4.5vw;
     text-align: center;

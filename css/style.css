@@ -405,9 +405,9 @@ form{
 
 .questions h3{
     color:#F4FCF5;
-    font-size:.7rem;
+    font-size:1rem;
     font-weight:700;
-    line-height: 1em;
+    line-height: .5em;
     padding-bottom:0;
     transition: .6s ease-in-out all;
     opacity:0;

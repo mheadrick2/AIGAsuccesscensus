@@ -628,6 +628,8 @@ function type1q4() {
         
         
     }}
+    console.log(imgs4)
+
     for (i=0; i<choices4.length; i++){
         allChoices.push(choices4[i]);
         allImgs.push(imgs4[i]);

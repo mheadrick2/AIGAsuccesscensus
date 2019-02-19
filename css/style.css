@@ -58,7 +58,7 @@ h3{
 }
 p{
     font-size:1.2rem;
-    font-weight:400;
+    font-weight:300;
     line-height: 1.5rem;
     color:#556BE2;
 }
@@ -200,6 +200,7 @@ header{
 
 #successform{
 /*    padding-left:5%;*/
+    display: grid;
     padding-right:5%;
     padding-bottom:5%;
 }
@@ -211,6 +212,14 @@ header{
     width: 15%;
     
     
+}
+
+#successform header {
+    grid-column: 1;
+}
+
+#successform  {
+    grid-column: 1;
 }
 
 #success{
@@ -400,7 +409,7 @@ form{
 .questions h1{
     color:#F4FCF5;
     font-size: 2.5rem;
-    font-weight:700;
+    font-weight:400;
     grid-column: 1;
     transition: 0.3s;
 /*    margin-top: .6em;*/
@@ -414,7 +423,7 @@ form{
 .questions h3{
     color:#F4FCF5;
     font-size:1rem;
-    font-weight:700;
+    font-weight:400;
     line-height: .5em;
     padding-bottom:0;
     transition: .6s ease-in-out all;

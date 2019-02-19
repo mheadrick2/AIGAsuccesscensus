@@ -69,6 +69,7 @@ body{
 
 #firstpage{
     padding:0;
+    overflow:hidden;
 }
 
 #statement{
@@ -96,6 +97,13 @@ header{
     z-index:5;
 }
 
+#closevid {
+    font-size:1.5em;
+    color:#556BE2;
+    margin-left:50%;
+    position:absolute;
+    font-weight:600;
+}
 
 .container {
     overflow:hidden;

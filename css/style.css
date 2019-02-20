@@ -725,6 +725,13 @@ img{
           z-index: 3;
             
           }
+
+        #hov1{
+            outline: none;
+            position: fixed;
+            left: 200px;
+            top: 75px;
+        }        
         
         #hov2{
             outline: none;
@@ -747,7 +754,7 @@ img{
       #hov5{
             outline: none;
           position: fixed;
-            left: 1300px;
+            left: 1000px;
             top: 200px;
         }
           
@@ -773,7 +780,7 @@ img{
         a.tooltip span {
             
             text-align: left;
-            font-size: .6rem;
+            font-size: .8rem;
             z-index:10;
             display:none; 
             padding:14px 20px;
@@ -798,8 +805,8 @@ img{
         }
         
           img{
-              width:45px;
-              height:45px;
+              width:35px;
+              height:35px;
 
           }
 

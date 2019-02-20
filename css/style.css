@@ -168,6 +168,25 @@ header{
     
 }
 
+#successdes h2{
+    color:#556BE2;
+    font-family: le-monde-livre-std, serif;
+    margin-bottom:1em;
+}
+
+#successdes h3{
+    color:#556BE2;
+    font-family: le-monde-livre-std, serif;
+    margin-bottom:1em;
+    line-height:1.5em;
+    font-size:1.2em;
+    font-weight:400;
+}
+
+#successform p{
+    color:#556BE2;
+}
+
 #firstbtn{
     position:absolute;
     float:center;
@@ -198,12 +217,22 @@ header{
 */
 
 
-#successform{
+.gridcontainer {
 /*    padding-left:5%;*/
     display: grid;
-    padding-right:5%;
-    padding-bottom:5%;
+    grid-template-columns:5% 45% 5% 40% auto;
 }
+.gridcontainer header {
+    grid-column: 2;
+}
+.gridcontainer main{
+    grid-column: 4;
+}
+
+.gridcontainer form{
+    display:block;
+}
+
 #submitbtn {
 /*    margin-left:5%;*/
     margin-right:5%;
@@ -214,16 +243,9 @@ header{
     
 }
 
-#successform header {
-    grid-column: 1;
-}
-
-#successform  label{
-    grid-column: 3;
-}
 
 #success{
-    padding:3.5em 2em;
+    padding:3em 2em;
     margin-bottom: 1em;
     border-radius:10px;
 }
@@ -284,8 +306,10 @@ a{
 
 .button a{
     color: #556BE2;
-    font-size: 2em;
-    margin-top:3em;
+    font-size: 1.5em;
+    font-weight:700;
+    text-transform: uppercase;
+
 /*    margin-bottom:3em;*/
 }
 
@@ -569,6 +593,7 @@ img{
     font-weight:600;
     font-size: 1.2em;
     line-height: 1.35em;
+    color:#556BE2;
  
 }
 

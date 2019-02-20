@@ -815,6 +815,14 @@ img{
         }
 
   
+#moreinfobtn{
+    position:absolute;
+    float:right;
+    z-index:500;
+    color:#556BE2;
+    text-decoration: underline;
+    display:none;
+}
 /*MORE INFO PAGE BELOW ---------------------------------------------*/
 
          #moreinfo{

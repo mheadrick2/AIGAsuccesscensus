@@ -157,6 +157,8 @@ function addClass(){
     document.getElementById("infobtn").style.display="block";
     document.getElementById("downloadbtn").style.display="block";
     
+    document.getElementById("moreinfobtn").style.display="block";
+    
     var tips = document.getElementsByClassName('tooltip');
 for(var i=0; i < tips.length; i++) { 
     tips[i].style.display="block";

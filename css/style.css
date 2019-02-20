@@ -228,15 +228,15 @@ strong {
     line-height: 3.1rem;
     font-family: le-monde-livre-std, serif;
     font-weight: 700;
-    margin-bottom:.3em;
+    margin-bottom:.6em;
 }
 
 #successdes h3{
     color:#556BE2;
     font-family: nimbus-sans, sans-serif;
-    margin-bottom:1.5em;
+    margin-bottom:1em;
     line-height:1.2em;
-    font-size:1em;
+    font-size:1.2em;
     font-weight:400;
 }
 

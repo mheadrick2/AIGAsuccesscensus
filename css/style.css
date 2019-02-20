@@ -818,7 +818,8 @@ img{
   
 /*MORE INFO PAGE BELOW ---------------------------------------------*/
 
-        #moreinfo{
+         #moreinfo{
+            scroll-snap-type: y mandatory;
         }
 
         #moreinfo h2{
@@ -828,21 +829,23 @@ img{
         }
 
         #moreinfo section{
+            
             padding-left:3em;
             padding-top: 6em;
+            scroll-snap-align: start;
 
         }
 
         #moreinfo h4{
             font-family: le-monde-livre-std, serif;
             color:darkslategray;
-            font-size: 28px;
+            font-size: 21px;
             width:70%;
             line-height: 1.2em;
             margin-bottom: 1em;
         }
 
-        #moreinfo h3{
+        #moreinfo h3,figcaption{
             font-size: 18px;
         }
 
@@ -857,9 +860,31 @@ img{
         .circ{
             height: 60px;
             width: 60px;
-            background-color: #bbb;
+/*            background-color: #bbb;*/
             border-radius: 50%;
             margin:.8em;
+        }
+
+        #circ1{
+            background-color: #4FFF9F;
+        }
+        #circ2{
+            background-color: #B4BCDC;
+        }
+        #circ3{
+            background-color: #A8A8E0;
+        }
+        #circ4{
+            background-color: #9B96E2;
+        }
+        #circ5{
+            background-color: #8F83E5;
+        }
+        #circ6{
+            background-color: #8271E9;
+        }
+        #circ7{
+            background-color: #765EED;
         }
 
 
@@ -877,8 +902,8 @@ img{
         #moreinfo section:nth-child(1) p{
             font-family: le-monde-livre-std, serif;
             font-weight: 700;
-            font-size: 48px;
-            line-height: 1.2em;
+            font-size: 42px;
+            line-height: 1.3em;
             width:70%;
         }
 
@@ -888,10 +913,24 @@ img{
             color:#F4FCF5;
         }
 
+/*
         #moreinfo section:nth-child(2) img{
             width: 34%;
             height: auto;
             padding:5% 7%;
+        }
+*/
+        #charts{
+            display: inline-block;
+        }
+
+        figure{
+            padding:5% 7%;
+        }
+
+        figure img{
+            width:34%;
+            height: auto;
         }
 
         #key img{
@@ -899,4 +938,10 @@ img{
             height: auto;
             margin-left: 9%;
             padding: 1em 0em;
+        }
+
+        #place img{
+            width:95%;
+            height:auto;
+
         }

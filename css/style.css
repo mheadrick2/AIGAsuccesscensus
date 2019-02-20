@@ -766,7 +766,7 @@ img{
 
 #btnContainer2{
     position: absolute;
-      bottom: 65%;
+      bottom: 70%;
       right: 3%;
     cursor: pointer;
 }
@@ -925,6 +925,7 @@ img{
     right:3%;
     z-index:500;
     text-decoration: underline;
+    text-decoration-color: #556BE2;
     color:#556BE2;
     display:none;
     transition: .2s linear all;

@@ -54,7 +54,7 @@ h3{
     font-weight:600;
 /*    text-transform: capitalize;*/
     color:#556BE2;
-    padding-bottom: .3rem
+/*    padding-bottom: .3rem*/
 }
 p{
     font-size:1.2rem;
@@ -64,8 +64,6 @@ p{
 }
 
 
-body{
-}
 
 #firstpage{
     padding:0;
@@ -75,6 +73,7 @@ body{
 #statement{
     display:inline;
 }
+
 #myChoice{
 /*    margin-top:7%;*/
     text-decoration:underline;
@@ -103,6 +102,10 @@ header{
     margin-left:50%;
     position:absolute;
     font-weight:600;
+}
+
+#closevid:hover {
+    color: #5EFEA5;
 }
 
 .container {
@@ -143,43 +146,97 @@ header{
 
 /*button*/
 .button{
-    padding:0.4em 0.4em;
-    color: #556BE2;
-    border: 2px solid #556BE2; 
-    text-align:center;
-    border-radius:10px;
+/*    padding:0.4em 0.4em;*/
+    color: #556BE2; 
+/*    border-radius:10px;*/
     z-index:3;
-    
+/*    margin-left: 50%;*/
 }
 
+/*
+#confirmation {
+    float: right;
+}
+*/
+
+#statementmargin {
+    margin-top: 5em;
+}
+
+/*
+#statementmargin main {
+    margin-left: 50%;
+}
+*/
+
 #confirmation .button{
-    padding:0.6em 0.6em;
-    color: #556BE2;
-    border: 2px solid #556BE2; 
+    color: #F4FCF5;
     text-align:center;
-    border-radius:10px;
     z-index:3;
-    margin-left: 42.5%;
-    
+    font-size:1.8rem;
+    text-transform: lowercase;
+    margin: 2em 0em;
+    padding:.25em;
+    padding-bottom: .35em;
+    width: 14%;
+    height:2%; 
+    background: #556BE2;
+/*    border: solid 4px #f4fcf5;*/
+    text-align: center;
+    border-radius:50px;
+}
+
+#confirmation .button:hover {
+    color: #556BE2;
+    background: #5EFEA5;
+}
+
+#successform {
+    margin-bottom: 5em;
+    margin-top: -1em;
 }
 
 #successform .button{
     margin-left:none;
+    margin-bottom: 1em;
+}
+
+#successform h3 {
+    font-size: 2.1em;
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 700;
+    line-height: 2.4em;
     
+}
+
+#successform p {
+    margin-left: 3em;
+}
+
+#successform span {
+    font-family: le-monde-livre-std, serif;
+    margin-right: 1em;
+}
+
+strong {
+    font-weight: 900;
 }
 
 #successdes h2{
     color:#556BE2;
+    font-size: 2.7em;
+    line-height: 3.1rem;
     font-family: le-monde-livre-std, serif;
-    margin-bottom:1em;
+    font-weight: 700;
+    margin-bottom:.3em;
 }
 
 #successdes h3{
     color:#556BE2;
-    font-family: le-monde-livre-std, serif;
+    font-family: nimbus-sans, sans-serif;
     margin-bottom:1em;
-    line-height:1.5em;
-    font-size:1.2em;
+    line-height:1.2em;
+    font-size:1em;
     font-weight:400;
 }
 
@@ -190,9 +247,23 @@ header{
 #firstbtn{
     position:absolute;
     float:center;
-    width:15%;
+/*    width:15%;*/
     top: 60%;
     left:42.5%;
+    color: #F4FCF5;
+    margin: 2em 0em;
+    padding:.25em;
+    padding-bottom: .35em;
+    width: 10%;
+    height:5%; 
+    background: #556BE2;
+    text-align: center;
+    border-radius:50px;
+}
+
+#firstbtn:hover {
+    color:#556BE2;
+    background: #5EFEA5;
 }
 
 #firstbtn i{
@@ -201,12 +272,14 @@ header{
 }
 
 .sidebutton{
-    padding:1.5em 3em 3em 3em;
+/*    padding:1.5em 3em 3em 3em;*/
     color: #556BE2;
-    float:center;
+/*    float:center;*/
     text-align:center;
     
 }
+
+
 
 /*
 .fas fa-arrow-right{
@@ -221,6 +294,7 @@ header{
 /*    padding-left:5%;*/
     display: grid;
     grid-template-columns:5% 45% 5% 40% auto;
+    margin-top: 5em;
 }
 .gridcontainer header {
     grid-column: 2;
@@ -235,36 +309,44 @@ header{
 
 #submitbtn {
 /*    margin-left:5%;*/
-    margin-right:5%;
+/*    margin-right:5%;*/
+    color: #F4FCF5;
     align-content: center;
     font-size:1.8rem;
-    width: 15%;
-    
-    
+/*    width: 15%;*/
+    text-transform: lowercase;
+    margin: 2em 0em;
+    padding:.25em;
+    padding-bottom: .35em;
+    width: 30%;
+    height:2%; 
+    background: #556BE2;
+/*    border: solid 4px #f4fcf5;*/
+    text-align: center;
+    border-radius:50px; 
+}
+
+#submitbtn:hover {
+    color: #556BE2;
+    background: #5EFEA5;
 }
 
 
-#success{
-    padding:3em 2em;
-    margin-bottom: 1em;
-    border-radius:10px;
-}
 
-#confirmation .button{
-    width:15%;
-}
 
-.button:hover{
-    background-color:#556BE2;
-    color:#F4FCF5; 
-    transition: opacity 0.1s ease-in;
+.button:hover h3{ 
+    display: inline;
+    background-image: linear-gradient(#F4FCF5 50%, #5EFEA5 60%);
+    color: #556BE2;
+/*    transition: opacity 0.1s ease-in;*/
     text-decoration: none;
     cursor: pointer;
 }
 
 .button:hover a{
-    color:#F4FCF5;
+    color:#556BE2;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button:hover p{
@@ -273,28 +355,29 @@ header{
     cursor: pointer;
 }
 
-.button:hover h3{
-    color:#F4FCF5;
-    text-decoration: none;
+.button:hover {
+    cursor: pointer;
 }
 
 input[type=checkbox] {
     visibility: hidden;
 }
-input[type=checkbox]:checked ~ div.content h3 span{
+input[type=checkbox]:checked ~ div.content h3 {
 /*    background: #90A0F2;*/
     display: inline;
     background-image: linear-gradient(#556BE2 50%, #90A0F2 60%);
     color: #F4FCF5;
 
 } 
-input[type=checkbox]:checked ~ section.button{
-    background-color:#556BE2;
-    transition: opacity 0.1s ease-in;
+input[type=checkbox]:checked ~ section.button h3{
+    display: inline;
+    background-image: linear-gradient(#F4FCF5 50%, #5EFEA5 60%);
+    color: #556BE2;
+/*    transition: opacity 0.1s ease-in;*/
 }
 
 input[type=checkbox]:checked ~ section.button h3,input[type=checkbox]:checked ~section.button p{
-    color:#F4FCF5;
+    color:#556BE2;
 }
 
 a{
@@ -303,6 +386,7 @@ a{
     text-align:right;
     text-decoration:none;
 }
+/*
 
 .button a{
     color: #556BE2;
@@ -310,8 +394,9 @@ a{
     font-weight:700;
     text-transform: uppercase;
 
-/*    margin-bottom:3em;*/
+    margin-bottom:3em;
 }
+*/
 
 .button3{
     font-weight: 400; 
@@ -320,21 +405,23 @@ a{
     color:#556BE2;
 }
 
+
 .submitcontain{
 /*    background: white;*/
     display: grid;
-    grid-template-columns: 45% 10% 45%;
     grid-column: 3;
     color: #556BE2;
     text-transform: lowercase;
-    margin: 2em 0em;
+    margin-bottom: 2em;
+    margin-top: 1em;
     padding:.6em;
-    width: 8%;
-    height:5%; 
+    padding-bottom: 1em;
+    width: 20%;
+    height:10%; 
     background: #f4fcf5;
 /*    border: solid 4px #f4fcf5;*/
     text-align: center;
-    border-radius:10px;
+    border-radius:50px;
 /*    text-decoration-color: #50ff9f;*/
     
 }
@@ -342,11 +429,13 @@ a{
 
 .submitcontain:hover {
     /*    border: solid 4px #50ff9f;*/
-    background: #f4fcf5;
+    background: #90A0F2;
+    cursor: pointer;
 }
 
 .submitcontain:hover div{
-    color: #556BE2;
+    color: #f4fcf5;;
+    cursor: pointer;
 }
 
 
@@ -397,8 +486,7 @@ form{
     min-width: 100vw;
     transition: .6s ease-in-out all;
 
-    
-    
+
     }
 /* questions class unfolds when you click #allqs*/
 .questions a:hover {
@@ -416,7 +504,7 @@ form{
 
 
 .questions section{
-    border-right: 1px solid white;
+/*    border-right: 1px solid white;*/
 /*	padding: 2rem;*/
 	text-align: center;
     flex-direction: column;
@@ -448,12 +536,12 @@ form{
 
 .questions h3{
     color:#F4FCF5;
-    font-size:1rem;
+    font-size:.9rem;
     font-weight:400;
-    line-height: .5em;
-    padding-bottom:0;
-    transition: .6s ease-in-out all;
-    opacity:0;
+    line-height: .9em;
+    padding-bottom: none;
+/*    transition: .6s ease-in-out all;*/
+/*    opacity:0;*/
 }
 
 .questions h3:hover {
@@ -474,6 +562,7 @@ form{
 }
 .options {
     grid-column: 3;
+    margin-top: -.2em;
 }
 
 .questions p{
@@ -481,33 +570,41 @@ form{
     opacity:0;
     transition: .6s ease-in-out all;
     font-size: 1.3em;
+    margin-left: 3em;
+}
+
+.questions span{
+    color: #F4FCF5;
+    font-family: le-monde-livre-std, serif;
+    margin-right: 1em;
 }
 
 /*trying out new styling for each q*/
 #plswork h3{
-    font-size:3em;
+    font-size:2em;
     font-weight:600;
-    line-height:1.3em;
+    line-height:1.2em;
 }
 
 #plswork p{
-    font-size:2em;
+    font-size:1.5em;
 }
 
 #plswork2 h3{
-    font-size:3em;
+    font-size:2em;
     font-weight:600;
-    line-height:1.3em;
+    line-height:1.2em;
 }
 
 #plswork4 h3{
-    font-size:3em;
+/*    margin-top: -2em;*/
+    font-size:2em;
     font-weight:600;
-    line-height:1.3em;
+    line-height:1.2em;
 }
 
 #plswork4 p{
-    font-size:2em;
+    font-size:1.5em;
 }
 
 .allqs:hover h1{

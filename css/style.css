@@ -662,15 +662,15 @@ img{
 
 #btnContainer, #btnContainer2{
     position: absolute;
-      bottom: 3%;
+      bottom: 80%;
       right: 3%; 
     cursor: pointer;
 }
 
 #btnContainer2{
     position: absolute;
-      bottom: 3%;
-      right: 9%;
+      top: 85%;
+      right: 3%;
     cursor: pointer;
 }
 

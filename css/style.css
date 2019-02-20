@@ -483,6 +483,33 @@ form{
     font-size: 1.3em;
 }
 
+/*trying out new styling for each q*/
+#plswork h3{
+    font-size:3em;
+    font-weight:600;
+    line-height:1.3em;
+}
+
+#plswork p{
+    font-size:2em;
+}
+
+#plswork2 h3{
+    font-size:3em;
+    font-weight:600;
+    line-height:1.3em;
+}
+
+#plswork4 h3{
+    font-size:3em;
+    font-weight:600;
+    line-height:1.3em;
+}
+
+#plswork4 p{
+    font-size:2em;
+}
+
 .allqs:hover h1{
     opacity: 1;
 }

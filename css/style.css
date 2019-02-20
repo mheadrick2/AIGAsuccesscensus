@@ -729,8 +729,8 @@ img{
         #hov1{
             outline: none;
             position: fixed;
-            left: 200px;
             top: 75px;
+            left: 200px;
         }        
         
         #hov2{
@@ -805,8 +805,8 @@ img{
         }
         
           img{
-              width:35px;
-              height:35px;
+              width:30px;
+              height:30px;
 
           }
 
@@ -823,12 +823,19 @@ img{
 
   
 #moreinfobtn{
-    position:absolute;
-    float:right;
+    position:fixed;
+    bottom:3%;
+    right:3%;
     z-index:500;
-    color:#556BE2;
     text-decoration: underline;
+    color:#556BE2;
     display:none;
+    transition: .2s linear all;
+}
+
+#moreinfobtn:hover{
+    transform: scale(1.01);
+    
 }
 /*MORE INFO PAGE BELOW ---------------------------------------------*/
 

@@ -967,6 +967,7 @@ img{
 
         #moreinfo h3,figcaption{
             font-size: 18px;
+            padding-bottom: .8em;
         }
 
         #moreinfo ul li{
@@ -1050,7 +1051,7 @@ img{
         }
 
         figure img{
-            width:34%;
+            width:50%;
             height: auto;
         }
 
